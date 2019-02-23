@@ -1,10 +1,17 @@
 import React from 'react';
 
-function TodoLI(){
+function TodoLI(props){
     return(
         <span className="form-check form-group todo-item">
-            <input type="checkbox" className="form-check-input" />
-            <label className="form-check-label">checkbox placeholder text</label>
+            <input 
+                type="checkbox" 
+                className="form-check-input"
+                checked={props.item.completed}
+                onChange={() => props.handleChange(props.item.id)}
+             />
+            <label className="form-check-label">
+                {props.item.text}
+            </label>
         </span>
     );  
 }

@@ -22,6 +22,11 @@ body footer .container .text-footer {
   color: #6c757d !important;
 }
 
+#root {
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
 .todo-list {
   display: -webkit-box;
   display: -ms-flexbox;
