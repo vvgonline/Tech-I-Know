@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TodoLI from './TodoLI';
 
 class App extends Component {
   render() {
-    return (
-      <div className="container-fluid">
+    return (      
       <div className="App">
         <header>
           <h1>
-            Hello React World
+            TODO App
           </h1>
         </header>
-      </div>
+        <div className="todo-list">
+          <TodoLI />
+        </div>
       </div>
     );
   }
