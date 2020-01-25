@@ -1,0 +1,5 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/AspMySql/MVCMySql/.vs/MVCMySql/v16/Server/sqlite3
