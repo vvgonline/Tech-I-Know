@@ -1,0 +1,9 @@
+﻿@page "/"
+
+@code {
+    private string msgStringOne = "Blazor";
+    // we can add some styling to this string using C#
+    private string _stringStyle = "italic";
+    private string _stringColor = "#ce9178";
+}
+<h1>Hello, <span style="font-style:@_stringStyle; color:@_stringColor">@msgStringOne</span> world!</h1>
