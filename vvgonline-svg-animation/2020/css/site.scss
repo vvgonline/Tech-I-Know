@@ -1,0 +1,93 @@
+body {
+    background-color: #231f20;
+    color: #ffffff;
+
+    svg {
+        height: 75px;
+        width: auto;
+
+        g#grp-canon {
+            animation-delay: 0s;
+            animation-name: FadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #left-v {
+            animation-delay: 1s;
+            animation-name: FadeInLHead;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #right-v {
+            animation-delay: 1s;
+            animation-name: FadeInRHead;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+    }
+}
+
+/* animation */
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes FadeInCanon {
+    0% {
+        opacity: 0;
+        transform: translate(0, -3px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes FadeInTurret {
+    0% {
+        opacity: 0;
+        transform: translate(0, 3px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes FadeInLHead {
+    0% {
+        opacity: 0;
+        transform: translate(-5px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes FadeInRHead {
+    0% {
+        opacity: 0;
+        transform: translate(5px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
