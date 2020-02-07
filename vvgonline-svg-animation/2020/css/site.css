@@ -1,18 +1,50 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
 body {
   background-color: #231f20;
   color: #ffffff;
+  margin: 0em;
+  padding: 0em;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 body svg {
-  height: 75px;
-  width: auto;
+  height: auto;
+  width: 1000px;
+  margin: 0 auto;
 }
 
-body svg g#grp-canon {
+body svg #grp-canon {
+  z-index: auto;
+}
+
+body svg #grp-canon #canon {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
-  -webkit-animation-name: FadeIn;
-          animation-name: FadeIn;
+  -webkit-animation-name: FadeInCanon;
+          animation-name: FadeInCanon;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #grp-canon #canon-ring {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-name: FadeInTurret;
+          animation-name: FadeInTurret;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -22,8 +54,9 @@ body svg g#grp-canon {
 }
 
 body svg #left-v {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  z-index: auto;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
   -webkit-animation-name: FadeInLHead;
           animation-name: FadeInLHead;
   -webkit-animation-duration: 1s;
@@ -35,10 +68,123 @@ body svg #left-v {
 }
 
 body svg #right-v {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  z-index: auto;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
   -webkit-animation-name: FadeInRHead;
           animation-name: FadeInRHead;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #grp-left-nox {
+  z-index: auto;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #grp-right-nox {
+  z-index: auto;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #left-3 {
+  z-index: auto;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-name: FadeInLHead;
+          animation-name: FadeInLHead;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #left-2 {
+  z-index: auto;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #left-1 {
+  z-index: auto;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #right-3 {
+  z-index: auto;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-name: FadeInRHead;
+          animation-name: FadeInRHead;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #right-2 {
+  z-index: auto;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #right-1 {
+  z-index: auto;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;

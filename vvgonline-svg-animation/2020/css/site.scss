@@ -1,21 +1,49 @@
+html,
+body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
 body {
     background-color: #231f20;
     color: #ffffff;
+    margin: 0em;
+    padding: 0em;
+    display: table-cell;
+    vertical-align: middle;
 
     svg {
-        height: 75px;
-        width: auto;
+        height: auto;
+        width: 1000px;
+        margin: 0 auto;
 
-        g#grp-canon {
-            animation-delay: 0s;
-            animation-name: FadeIn;
-            animation-duration: 1s;
-            animation-fill-mode: both;
-            animation-timing-function: ease-in;
+        #grp-canon {
+            z-index: auto;
+
+            #canon {
+                animation-delay: 0s;
+                animation-name: FadeInCanon;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+                animation-timing-function: ease-in;
+            }
+
+            #canon-ring {
+                animation-delay: 0.5s;
+                animation-name: FadeInTurret;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+                animation-timing-function: ease-in;
+            }
         }
 
         #left-v {
-            animation-delay: 1s;
+            z-index: auto;
+            animation-delay: 1.5s;
             animation-name: FadeInLHead;
             animation-duration: 1s;
             animation-fill-mode: both;
@@ -23,13 +51,85 @@ body {
         }
 
         #right-v {
-            animation-delay: 1s;
+            z-index: auto;
+            animation-delay: 1.5s;
             animation-name: FadeInRHead;
             animation-duration: 1s;
             animation-fill-mode: both;
             animation-timing-function: ease-in;
         }
 
+        #grp-left-nox {
+            z-index: auto;
+            animation-delay: 5s;
+            animation-name: FadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #grp-right-nox {
+            z-index: auto;
+            animation-delay: 5s;
+            animation-name: FadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #left-3 {
+            z-index: auto;
+            animation-delay: 2s;
+            animation-name: FadeInLHead;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #left-2 {
+            z-index: auto;
+            animation-delay: 3s;
+            animation-name: FadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #left-1 {
+            z-index: auto;
+            animation-delay: 4s;
+            animation-name: FadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #right-3 {
+            z-index: auto;
+            animation-delay: 2s;
+            animation-name: FadeInRHead;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #right-2 {
+            z-index: auto;
+            animation-delay: 3s;
+            animation-name: FadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #right-1 {
+            z-index: auto;
+            animation-delay: 4s;
+            animation-name: FadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
     }
 }
 
