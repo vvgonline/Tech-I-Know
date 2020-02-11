@@ -125,12 +125,12 @@ body svg #left-3 {
 
 body svg #left-2 {
   z-index: auto;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
   -webkit-animation-name: FadeIn;
           animation-name: FadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-animation-timing-function: ease-in;
@@ -139,12 +139,12 @@ body svg #left-2 {
 
 body svg #left-1 {
   z-index: auto;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
   -webkit-animation-name: FadeIn;
           animation-name: FadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 1.75s;
+          animation-duration: 1.75s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-animation-timing-function: ease-in;
@@ -167,12 +167,12 @@ body svg #right-3 {
 
 body svg #right-2 {
   z-index: auto;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
   -webkit-animation-name: FadeIn;
           animation-name: FadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-animation-timing-function: ease-in;
@@ -181,12 +181,12 @@ body svg #right-2 {
 
 body svg #right-1 {
   z-index: auto;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
   -webkit-animation-name: FadeIn;
           animation-name: FadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 1.75s;
+          animation-duration: 1.75s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-animation-timing-function: ease-in;
