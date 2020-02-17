@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\vvgon\\source\\repos\\github\\tech-i-know\\blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
+  "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -11,55 +11,6 @@
   },
   "ProjectWorkspaceState": {
     "TagHelpers": [
-      {
-        "Kind": "Components.Component",
-        "Name": "BlazorLearningServerApp.Pages.Error",
-        "AssemblyName": "BlazorLearningServerApp",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Error",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorLearningServerApp.Pages.Error"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "BlazorLearningServerApp.Pages.Error",
-        "AssemblyName": "BlazorLearningServerApp",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorLearningServerApp.Pages.Error",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorLearningServerApp.Pages.Error",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
       {
         "Kind": "Components.Component",
         "Name": "BlazorLearningServerApp.Pages.Counter",
@@ -111,6 +62,55 @@
       },
       {
         "Kind": "Components.Component",
+        "Name": "BlazorLearningServerApp.Pages.Error",
+        "AssemblyName": "BlazorLearningServerApp",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Error",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorLearningServerApp.Pages.Error"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorLearningServerApp.Pages.Error",
+        "AssemblyName": "BlazorLearningServerApp",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorLearningServerApp.Pages.Error",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorLearningServerApp.Pages.Error",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
         "Name": "BlazorLearningServerApp.Pages.FetchData",
         "AssemblyName": "BlazorLearningServerApp",
         "Documentation": null,
@@ -155,6 +155,55 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorLearningServerApp.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorLearningServerApp.Pages.About",
+        "AssemblyName": "BlazorLearningServerApp",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "About",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorLearningServerApp.Pages.About"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorLearningServerApp.Pages.About",
+        "AssemblyName": "BlazorLearningServerApp",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorLearningServerApp.Pages.About",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorLearningServerApp.Pages.About",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -253,6 +302,55 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorLearningServerApp.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorLearningServerApp.Shared.NavMenu",
+        "AssemblyName": "BlazorLearningServerApp",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorLearningServerApp.Shared.NavMenu"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorLearningServerApp.Shared.NavMenu",
+        "AssemblyName": "BlazorLearningServerApp",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorLearningServerApp.Shared.NavMenu",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorLearningServerApp.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -385,55 +483,6 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "BlazorLearningServerApp.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "BlazorLearningServerApp.Shared.NavMenu",
-        "AssemblyName": "BlazorLearningServerApp",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorLearningServerApp.Shared.NavMenu"
-        }
-      },
-      {
-        "Kind": "Components.Component",
-        "Name": "BlazorLearningServerApp.Shared.NavMenu",
-        "AssemblyName": "BlazorLearningServerApp",
-        "Documentation": null,
-        "TagOutputHint": null,
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorLearningServerApp.Shared.NavMenu",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorLearningServerApp.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -20927,48 +20976,53 @@
   "RootNamespace": "BlazorLearningServerApp",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\vvgon\\source\\repos\\github\\tech-i-know\\blazor\\BlazorLearningServerApp\\Pages\\Error.razor",
-      "TargetPath": "Pages\\Error.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\vvgon\\source\\repos\\github\\tech-i-know\\blazor\\BlazorLearningServerApp\\_Imports.razor",
+      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
     },
     {
-      "FilePath": "c:\\Users\\vvgon\\source\\repos\\github\\tech-i-know\\blazor\\BlazorLearningServerApp\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\vvgon\\source\\repos\\github\\tech-i-know\\blazor\\BlazorLearningServerApp\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\vvgon\\source\\repos\\github\\tech-i-know\\blazor\\BlazorLearningServerApp\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\vvgon\\source\\repos\\github\\tech-i-know\\blazor\\BlazorLearningServerApp\\Pages\\FetchData.razor",
+      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Pages\\FetchData.razor",
       "TargetPath": "Pages\\FetchData.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\vvgon\\source\\repos\\github\\tech-i-know\\blazor\\BlazorLearningServerApp\\Pages\\_Host.cshtml",
+      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Pages\\About.razor",
+      "TargetPath": "Pages\\About.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Pages\\Error.razor",
+      "TargetPath": "Pages\\Error.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Pages\\_Host.cshtml",
       "TargetPath": "Pages\\_Host.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\vvgon\\source\\repos\\github\\tech-i-know\\blazor\\BlazorLearningServerApp\\Pages\\Index.razor",
+      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Pages\\Index.razor",
       "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\vvgon\\source\\repos\\github\\tech-i-know\\blazor\\BlazorLearningServerApp\\App.razor",
-      "TargetPath": "App.razor",
+      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Pages\\Counter.razor",
+      "TargetPath": "Pages\\Counter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
       "FileKind": "component"
     }
   ],

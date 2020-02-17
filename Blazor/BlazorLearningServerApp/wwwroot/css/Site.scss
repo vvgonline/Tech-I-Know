@@ -2,6 +2,7 @@
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 0em;
 }
 
 a, .btn-link {
@@ -180,4 +181,9 @@ app {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
+}
+
+.container-fluid,
+.container {
+    padding: 0em;
 }

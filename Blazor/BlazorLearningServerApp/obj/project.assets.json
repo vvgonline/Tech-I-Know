@@ -9,26 +9,23 @@
   },
   "packageFolders": {
     "C:\\Users\\vvgon\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vvgon\\source\\repos\\github\\tech-i-know\\blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
+      "projectUniqueName": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
       "projectName": "BlazorLearningServerApp",
-      "projectPath": "C:\\Users\\vvgon\\source\\repos\\github\\tech-i-know\\blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
+      "projectPath": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
       "packagesPath": "C:\\Users\\vvgon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vvgon\\source\\repos\\github\\tech-i-know\\blazor\\BlazorLearningServerApp\\obj\\",
+      "outputPath": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\vvgon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
