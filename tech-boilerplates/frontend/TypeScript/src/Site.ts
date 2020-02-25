@@ -1,8 +1,19 @@
+//TEST 1
+//to Test the app just run command: node src/sitejs
 //Test Hello World App
-function hello(compiler: string) {
-    console.log(`Hello from ${compiler}`);
-}
-hello('TypeScript');
+// function hello(compiler: string) {
+//     console.log(`Hello from ${compiler}`);
+// }
+// hello('TypeScript');
+//Status: Working
+
+//TEST 2
+//to Test the app just run command: node src/sitejs
+//Module Test Hello World App
+import { sayHello } from './greet';
+
+console.log(sayHello('TypeScript'));
+//Status: Working
 
 // /**
 //  * Predefined delays (in milliseconds/ms).

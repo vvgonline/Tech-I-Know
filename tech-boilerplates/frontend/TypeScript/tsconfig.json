@@ -1,6 +1,7 @@
 {
   "files": [
-    "src/site.ts"
+    "src/site.ts",
+    "src/greet.ts"
   ],
   "compilerOptions": {
     /* Basic Options */
