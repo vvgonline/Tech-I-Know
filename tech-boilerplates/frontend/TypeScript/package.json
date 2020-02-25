@@ -1,0 +1,19 @@
+{
+  "name": "ts-web-boilerplate",
+  "version": "1.0.0",
+  "description": "Minimalistic TypeScript Boilerplate to quick-start Web application development using Vanilla JavaScript by Vvgonline",
+  "main": "src/Site.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Vvgonline",
+    "Tech-I-know",
+    "Vaibhav V.Gupta"
+  ],
+  "author": "Vaibhav V. Gupta <vvgonline.net@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.8.2"
+  }
+}

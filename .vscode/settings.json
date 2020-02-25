@@ -596,7 +596,8 @@
     "workbench.colorCustomizations": {},
 
     // Specifies the color theme used in the workbench.
-    "workbench.colorTheme": "Monokai Dimmed",
+    //"workbench.colorTheme": "Monokai Dimmed",
+    "workbench.colorTheme": "LaserWave",
 
     // Controls the number of recently used commands to keep in history for the command palette. Set to 0 to disable command history.
     "workbench.commandPalette.history": 50,
@@ -873,10 +874,10 @@
     //  - afterDelay: A dirty editor is automatically saved after the configured `files.autoSaveDelay`.
     //  - onFocusChange: A dirty editor is automatically saved when the editor loses focus.
     //  - onWindowChange: A dirty editor is automatically saved when the window loses focus.
-    "files.autoSave": "off",
+    "files.autoSave": "afterDelay",
 
     // Controls the delay in ms after which a dirty editor is saved automatically. Only applies when `files.autoSave` is set to `afterDelay`.
-    "files.autoSaveDelay": 1000,
+    "files.autoSaveDelay": 500,
 
     // The default language mode that is assigned to new files. If configured to `${activeEditorLanguage}`, will use the language mode of the currently active text editor if any.
     "files.defaultLanguage": "",
