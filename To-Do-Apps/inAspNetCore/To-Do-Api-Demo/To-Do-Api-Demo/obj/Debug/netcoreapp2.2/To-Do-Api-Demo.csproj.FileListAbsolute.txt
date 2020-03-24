@@ -1,0 +1,16 @@
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\bin\Debug\netcoreapp2.2\To-Do-Api-Demo.deps.json
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\bin\Debug\netcoreapp2.2\To-Do-Api-Demo.runtimeconfig.json
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\bin\Debug\netcoreapp2.2\To-Do-Api-Demo.runtimeconfig.dev.json
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\bin\Debug\netcoreapp2.2\To-Do-Api-Demo.dll
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\bin\Debug\netcoreapp2.2\To-Do-Api-Demo.pdb
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\obj\Debug\netcoreapp2.2\To-Do-Api-Demo.csprojAssemblyReference.cache
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\obj\Debug\netcoreapp2.2\To-Do-Api-Demo.RazorAssemblyInfo.cache
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\obj\Debug\netcoreapp2.2\To-Do-Api-Demo.RazorAssemblyInfo.cs
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\obj\Debug\netcoreapp2.2\To-Do-Api-Demo.AssemblyInfoInputs.cache
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\obj\Debug\netcoreapp2.2\To-Do-Api-Demo.AssemblyInfo.cs
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\obj\Debug\netcoreapp2.2\To-Do-Api-Demo.RazorTargetAssemblyInfo.cache
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\obj\Debug\netcoreapp2.2\To-Do-Api-Demo.dll
+C:\Users\vvgon\source\github\tech-i-know\To-Do-Apps\inAspNetCore\To-Do-Api-Demo\To-Do-Api-Demo\obj\Debug\netcoreapp2.2\To-Do-Api-Demo.pdb
