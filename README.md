@@ -5,9 +5,18 @@ In this repo I am going write codes / make projects to demonstrate the technolog
 ## List of Demos
 
 <ul>
-    <li>To-Do Demo Apps with React.Js, Asp.Net Core Web API using Swashbuckler</li>
+    <li>To-Do Demo Apps
+        <ul>
+            <li>React.Js Demo</li>
+            <li>Asp.Net Core Web API using Swashbuckler Demo</li>
+        </ul>
+    </li>
     <li>Vvgonline Icon SVG Animation</li>
-    <li>Asp-Mysql connection demo</li>
-    <li>Blazor server app demo</li>
+    <li>DotNet Demos
+        <ul>
+            <li>Asp-Mysql connection demo</li>
+            <li>Blazor server app demo</li>
+        </ul>
+    </li>
     <li>Tech-boilerplates: A collection of starter-kit</li>
 </ul>
