@@ -1,5 +1,5 @@
 //TEST 1
-//to Test the app just run command: node src/sitejs
+//to Test the app just run command: node src/site.js
 //Test Hello World App
 // function hello(compiler: string) {
 //     console.log(`Hello from ${compiler}`);
@@ -8,7 +8,7 @@
 //Status: Working
 
 //TEST 2
-//to Test the app just run command: node src/sitejs
+//to Test the app just run command: node src/site.js
 //Module Test Hello World App
 import { sayHello } from './greet';
 

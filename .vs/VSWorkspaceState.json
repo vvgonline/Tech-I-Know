@@ -1,13 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\tech-boilerplates",
-    "\\tech-boilerplates\\frontend",
-    "\\tech-boilerplates\\frontend\\TypeScript",
     "\\tech-boilerplates\\frontend\\TypeScript\\dist",
-    "\\vvgonline-svg-animation",
     "\\vvgonline-svg-animation\\2020"
   ],
-  "SelectedNode": "\\tech-boilerplates\\frontend\\TypeScript\\Index.html",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
