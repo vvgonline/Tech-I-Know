@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Projects>
   <project>
     <Id>1</Id>
@@ -13,6 +13,31 @@
   <project>
     <Id>4</Id>
     <ProjectName>Immediate Security Services</ProjectName>
+    <Location>Indore</Location>
+  </project>
+  <project>
+    <Id>5</Id>
+    <ProjectName />
+    <Location />
+  </project>
+  <project>
+    <Id>6</Id>
+    <ProjectName>Oye24</ProjectName>
+    <Location>Indore</Location>
+  </project>
+  <project>
+    <Id>7</Id>
+    <ProjectName>Mintto</ProjectName>
+    <Location>Indore</Location>
+  </project>
+  <project>
+    <Id>8</Id>
+    <ProjectName>LaCasa</ProjectName>
+    <Location>USA</Location>
+  </project>
+  <project>
+    <Id>9</Id>
+    <ProjectName>Scale Ban</ProjectName>
     <Location>Indore</Location>
   </project>
 </Projects>

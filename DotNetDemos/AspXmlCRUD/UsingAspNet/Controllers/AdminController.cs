@@ -14,23 +14,30 @@ namespace UsingAspNet.Controllers
     {
         // object of model ProjectModels
         readonly ProjectModels pm = new ProjectModels();
+        // XML File location inside the project
+        private string xmlDocLocation = "~/App_Data/ProjList.xml";
         // GET: Admin
         public ActionResult Index()
         {
-            List<ProjectModels> projList = new List<ProjectModels>();
-            DataSet ds = new DataSet();
-            ds.ReadXml(Server.MapPath("~/App_Data/ProjList.xml"));
-            DataView dvPrograms;
-            dvPrograms = ds.Tables[0].DefaultView;
-            dvPrograms.Sort = "Id";
-            foreach (DataRowView dataRow in dvPrograms)
+            List<ProjectModels> projects = new List<ProjectModels>();
+            //Load the XML file in XmlDocument.
+            XmlDocument doc = new XmlDocument();
+            doc.Load(Server.MapPath(xmlDocLocation));
+
+            //Loop through the selected Nodes.
+            foreach (XmlNode node in doc.SelectNodes("/Projects/project"))
             {
-                pm.ProjId = Convert.ToInt32(dataRow[0]);
-                pm.ProjName = Convert.ToString(dataRow[1]);
-                pm.Location = Convert.ToString(dataRow[2]);
+                //Fetch the Node values and assign it to Model.
+                projects.Add(new ProjectModels
+                {
+                    ProjId = int.Parse(node["Id"].InnerText),
+                    ProjName = node["ProjectName"].InnerText,
+                    Location = node["Location"].InnerText
+                });
             }
-            if (projList.Count > 0) {
-                return View(projList);
+            if (projects.Count > 0)
+            {
+                return View(projects);
             }
             return View();
         }
@@ -38,7 +45,7 @@ namespace UsingAspNet.Controllers
         // GET: Admin/Details/5
         public void Details(int id)
         {
-            XDocument xDocument = XDocument.Load(Server.MapPath("~/App_Data/ProjList.xml"));
+            XDocument xDocument = XDocument.Load(Server.MapPath(xmlDocLocation));
             var items = (from item in xDocument.Descendants("Project")
                          where Convert.ToInt32(item.Element("Id").Value) == id
                          select new ProjectItems
@@ -63,12 +70,49 @@ namespace UsingAspNet.Controllers
 
         // POST: Admin/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(int?id, FormCollection collection, ProjectModels models)
         {
             try
             {
                 // TODO: Add insert logic here
+                if (id is null)
+                {
+                    XmlDocument oXmlDocument = new XmlDocument();
+                    oXmlDocument.Load(Server.MapPath(xmlDocLocation));
+                    XmlNodeList nodelist = oXmlDocument.GetElementsByTagName("Project");
+                    var x = oXmlDocument.GetElementsByTagName("Id");
+                    int Max = 0;
+                    foreach (XmlElement item in x)
+                    {
+                        int EId = Convert.ToInt32(item.InnerText.ToString());
+                        if (EId > Max)
+                        {
+                            Max = EId;
+                        }
+                    }
+                    Max += 1;
+                    XDocument xmlDoc = XDocument.Load(Server.MapPath(xmlDocLocation));
+                    xmlDoc.Element("Projects").Add(new XElement("Project", new XElement("Id", Max), new XElement("ProjectName", models.ProjName), new XElement("Location", models.Location)));
+                    xmlDoc.Save(Server.MapPath(xmlDocLocation));
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    if (models.ProjId > 0)
+                    {
+                        XDocument xmlDoc = XDocument.Load(Server.MapPath(xmlDocLocation));
+                        var items = (from item in xmlDoc.Descendants("Project") select item).ToList();
+                        XElement selected = items.Where(p => p.Element("Id").Value == models.ProjId.ToString()).FirstOrDefault();
+                        selected.Remove();
+                        xmlDoc.Save(Server.MapPath(xmlDocLocation));
+                        xmlDoc.Element("Projects").Add(new XElement("Project", new XElement("Id", models.ProjId), new XElement("ProjectName", models.ProjName), new XElement("Location", models.Location)));
+                        xmlDoc.Save(Server.MapPath(xmlDocLocation));
 
+                        xmlDoc.Element("Projects").Add(new XElement("Project", new XElement("Id", models.ProjId), new XElement("ProjectName", models.ProjName), new XElement("Location", models.Location)));
+                        xmlDoc.Save(Server.MapPath(xmlDocLocation));
+                        return RedirectToAction("Index", "Home");
+                    }
+                }
                 return RedirectToAction("Index");
             }
             catch
@@ -80,13 +124,13 @@ namespace UsingAspNet.Controllers
         // GET: Admin/Edit/5
         public ActionResult AddEditProject(int? id)
         {
-            int Id = Convert.ToInt32(id);
             if (id is null)
             {
                 throw new ArgumentNullException(nameof(id));
             }
             else
             {
+                int Id = Convert.ToInt32(id);
                 if (Id > 0)
                 {
                     Details(Id);
@@ -107,22 +151,22 @@ namespace UsingAspNet.Controllers
         {
             if(models.ProjId > 0)
             {
-                XDocument xmlDoc = XDocument.Load(Server.MapPath("~/App_Data/ProjList.xml"));
+                XDocument xmlDoc = XDocument.Load(Server.MapPath(xmlDocLocation));
                 var items = (from item in xmlDoc.Descendants("Project") select item).ToList();
                 XElement selected = items.Where(p => p.Element("Id").Value == models.ProjId.ToString()).FirstOrDefault();
                 selected.Remove();
-                xmlDoc.Save(Server.MapPath("~/App_Data/ProjList.xml"));
+                xmlDoc.Save(Server.MapPath(xmlDocLocation));
                 xmlDoc.Element("Projects").Add(new XElement("Project", new XElement("Id", models.ProjId), new XElement("ProjectName", models.ProjName), new XElement("Location", models.Location)));
-                xmlDoc.Save(Server.MapPath("~/App_Data/ProjList.xml"));
+                xmlDoc.Save(Server.MapPath(xmlDocLocation));
 
                 xmlDoc.Element("Projects").Add(new XElement("Project", new XElement("Id", models.ProjId), new XElement("ProjectName", models.ProjName), new XElement("Location", models.Location)));
-                xmlDoc.Save(Server.MapPath("~/XML/ProjectList.xml"));
+                xmlDoc.Save(Server.MapPath(xmlDocLocation));
                 return RedirectToAction("Index", "Admin");
             }
             else
             {
                 XmlDocument oXmlDocument = new XmlDocument();
-                oXmlDocument.Load(Server.MapPath("~/App_Data/ProjList.xml"));
+                oXmlDocument.Load(Server.MapPath(xmlDocLocation));
                 XmlNodeList nodelist = oXmlDocument.GetElementsByTagName("Project");
                 var x = oXmlDocument.GetElementsByTagName("Id");
                 int Max = 0;
@@ -135,9 +179,9 @@ namespace UsingAspNet.Controllers
                     }
                 }
                 Max += 1;
-                XDocument xmlDoc = XDocument.Load(Server.MapPath("~/App_Data/ProjList.xml"));
+                XDocument xmlDoc = XDocument.Load(Server.MapPath(xmlDocLocation));
                 xmlDoc.Element("Projects").Add(new XElement("Project", new XElement("Id", Max), new XElement("ProjectName", models.ProjName), new XElement("Location", models.Location)));
-                xmlDoc.Save(Server.MapPath("~/App_Data/ProjList.xml"));
+                xmlDoc.Save(Server.MapPath(xmlDocLocation));
                 return RedirectToAction("Index", "Admin");
             }
         }
@@ -145,15 +189,7 @@ namespace UsingAspNet.Controllers
         // GET: Admin/Delete/5
         public ActionResult Delete(int id)
         {
-            if (id > 0)
-            {
-                XDocument xmlDoc = XDocument.Load(Server.MapPath("~/App_Data/ProjList.xml"));
-                var items = (from item in xmlDoc.Descendants("Project") select item).ToList();
-                XElement selected = items.Where(p => p.Element("Id").Value == id.ToString()).FirstOrDefault();
-                selected.Remove();
-                xmlDoc.Save(Server.MapPath("~/App_Data/ProjList.xml"));
-            }
-            return RedirectToAction("Index", "Admin");
+            return View();
         }
 
         // POST: Admin/Delete/5
@@ -163,8 +199,15 @@ namespace UsingAspNet.Controllers
             try
             {
                 // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
+                if (id > 0)
+                {
+                    XDocument xmlDoc = XDocument.Load(Server.MapPath(xmlDocLocation));
+                    var items = (from item in xmlDoc.Descendants("Project") select item).ToList();
+                    XElement selected = items.Where(p => p.Element("Id").Value == id.ToString()).FirstOrDefault();
+                    selected.Remove();
+                    xmlDoc.Save(Server.MapPath(xmlDocLocation));
+                }
+                return RedirectToAction("Index", "Admin");
             }
             catch
             {

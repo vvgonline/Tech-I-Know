@@ -8,7 +8,7 @@
 
 <div class="text-center">
     <h4>
-        @Html.ActionLink("Add New project", "AddEditProject")
+        @Html.ActionLink("Add New project", "Create")
     </h4>
 </div>
 
@@ -42,8 +42,8 @@
                     </td>
 
                     <td>
-                        @*@Html.ActionLink("Edit", "AddEditProject", new { id = @item.Id }) /
-                            @Html.ActionLink("Delete", "Delete", new { id = @item.Id })*@
+                        @Html.ActionLink("Edit", "AddEditProject", new { id = project.ProjId }) /
+                            @Html.ActionLink("Delete", "Delete", new { id = project.ProjId })
                     </td>
                 </tr>
             }

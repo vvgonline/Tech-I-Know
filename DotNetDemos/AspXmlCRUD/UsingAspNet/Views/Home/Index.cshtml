@@ -2,17 +2,24 @@
 @model IEnumerable<ProjectModels>
 @{
     ViewBag.Title = "Index";
+    int count = 0;
+    foreach (ProjectModels project in Model)
+    {
+        count++;
+    }
 }
 
-<h2>Home/Index</h2>
+<h2>List of Projects</h2>
 
 <div>
     <table class="table table-responsive table-striped">
+        <caption>Total Projects = @count</caption>
         <thead>
             <tr>
                 <th>Project Id</th>
                 <th>Project Name</th>
                 <th>Location</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -22,8 +29,24 @@
                     <td>@project.ProjId</td>
                     <td>@project.ProjName</td>
                     <td>@project.Location</td>
+                    <td>
+                        <span>
+                            @Html.ActionLink("Edit", "Edit", new { id = project.ProjId }) <i class="fa fa-pencil"></i>
+                        </span>
+                        <span>
+                            &nbsp;|&nbsp;
+                        </span>
+                        <span>
+                            Delete <i class="fa fa-trash"></i>
+                        </span>
+                    </td>
                 </tr>
             }
+            <tr>
+                <td colspan="4">
+                    @Html.ActionLink("Add new Project", "Create", "Home")
+                </td>
+            </tr>
         </tbody>
     </table>
 </div>
