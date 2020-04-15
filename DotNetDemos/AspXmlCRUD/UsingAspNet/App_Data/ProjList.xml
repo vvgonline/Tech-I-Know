@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Projects>
+  <project>
+    <Id>1</Id>
+    <ProjectName>TakeItApp</ProjectName>
+    <Location>Paris</Location>
+  </project>
+  <project>
+    <Id>3</Id>
+    <ProjectName>Sudhir Infotech</ProjectName>
+    <Location>Indore</Location>
+  </project>
+  <project>
+    <Id>4</Id>
+    <ProjectName>Immediate Security Services</ProjectName>
+    <Location>Indore</Location>
+  </project>
+</Projects>

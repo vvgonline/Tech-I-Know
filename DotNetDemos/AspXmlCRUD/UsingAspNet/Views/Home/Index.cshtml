@@ -1,0 +1,29 @@
+﻿@using UsingAspNet.Models
+@model IEnumerable<ProjectModels>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Home/Index</h2>
+
+<div>
+    <table class="table table-responsive table-striped">
+        <thead>
+            <tr>
+                <th>Project Id</th>
+                <th>Project Name</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (ProjectModels project in Model)
+            {
+                <tr>
+                    <td>@project.ProjId</td>
+                    <td>@project.ProjName</td>
+                    <td>@project.Location</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
