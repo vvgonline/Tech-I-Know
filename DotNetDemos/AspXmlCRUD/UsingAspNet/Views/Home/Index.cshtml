@@ -23,7 +23,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (ProjectModels project in Model)
+            @foreach (var project in Model)
             {
                 <tr>
                     <td>@project.ProjId</td>
@@ -37,7 +37,7 @@
                             &nbsp;|&nbsp;
                         </span>
                         <span>
-                            Delete <i class="fa fa-trash"></i>
+                            @Html.ActionLink("Delete", "Details", new { id = project.ProjId }) <i class="fa fa-trash"></i>
                         </span>
                     </td>
                 </tr>

@@ -1,24 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Projects>
   <project>
-    <Id>1</Id>
-    <ProjectName>TakeItApp</ProjectName>
-    <Location>Paris</Location>
-  </project>
-  <project>
-    <Id>3</Id>
-    <ProjectName>Sudhir Infotech</ProjectName>
-    <Location>Indore</Location>
-  </project>
-  <project>
     <Id>4</Id>
-    <ProjectName>Immediate Security Services</ProjectName>
-    <Location>Indore</Location>
-  </project>
-  <project>
-    <Id>5</Id>
-    <ProjectName />
-    <Location />
+    <ProjectName>
+    </ProjectName>
+    <Location>
+    </Location>
   </project>
   <project>
     <Id>6</Id>
@@ -39,5 +26,10 @@
     <Id>9</Id>
     <ProjectName>Scale Ban</ProjectName>
     <Location>Indore</Location>
+  </project>
+  <project>
+    <Id>10</Id>
+    <ProjectName>TakeItApp</ProjectName>
+    <Location>Paris, France</Location>
   </project>
 </Projects>

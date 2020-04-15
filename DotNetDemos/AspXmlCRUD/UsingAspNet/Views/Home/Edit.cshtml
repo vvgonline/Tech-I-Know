@@ -1,0 +1,29 @@
+﻿@model UsingAspNet.Models.ProjectModels
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm("Edit", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(Model => Model.ProjId)
+    <div class="form-group">
+        <span>Project Name</span>
+        <span>
+            @Html.TextBoxFor(Model => Model.ProjName, new { @class = "form-control" })
+        </span>
+    </div>
+    <div class="form-group">
+        <span>Project Location</span>
+        <span>
+            @Html.TextBoxFor(Model => Model.Location, new { @class = "form-control" })
+        </span>
+    </div>
+    <div class="form-group">
+        @*@Html.ActionLink("Edit", "Edit", "Home", new { id = Model.ProjId } , new { @class = "btn btn-success"})*@
+        <input type="submit" value="Edit" class="btn btn-success" />
+        <a href="@Url.Action("Index", "Home")" class="btn btn-default">Cancel</a>
+    </div>
+}
