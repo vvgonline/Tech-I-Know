@@ -3,27 +3,42 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
+    <h2>Edit Project</h2>
 
-@using (Html.BeginForm("Edit", "Home", FormMethod.Post))
+@using (Html.BeginForm("Update", "Home", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
-    @Html.HiddenFor(Model => Model.ProjId)
-    <div class="form-group">
-        <span>Project Name</span>
-        <span>
-            @Html.TextBoxFor(Model => Model.ProjName, new { @class = "form-control" })
-        </span>
-    </div>
-    <div class="form-group">
-        <span>Project Location</span>
-        <span>
-            @Html.TextBoxFor(Model => Model.Location, new { @class = "form-control" })
-        </span>
-    </div>
-    <div class="form-group">
-        @*@Html.ActionLink("Edit", "Edit", "Home", new { id = Model.ProjId } , new { @class = "btn btn-success"})*@
-        <input type="submit" value="Edit" class="btn btn-success" />
-        <a href="@Url.Action("Index", "Home")" class="btn btn-default">Cancel</a>
+    @Html.HiddenFor(m => m.ProjId)
+    <div>
+        <table class="table table-responsive table-striped">
+            <tbody>
+                <tr>
+                    <td>@Html.LabelFor(m => m.ProjName)</td>
+                    <td><span class="form-control">@Model.ProjId</span></td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.ProjName)</td>
+                    <td>
+                        <span>@Html.TextBoxFor(m => m.ProjName, new { @class = "form-control" })</span>
+                        <span>@Html.ValidationMessageFor(m => m.ProjName)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Location)</td>
+                    <td>
+                        <span>@Html.TextBoxFor(m => m.Location, new { @class = "form-control" })</span>
+                        @*<span>@Html.ValidationMessageFor(m => m.Location)</span>*@
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input id="btnAdd" class="btn btn-success" type="submit" value="Edit" />
+                        @*<a href="@Url.Action("Update", "Home", FormMethod.Post)"
+        class="btn btn-success">Edit</a>*@
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 }

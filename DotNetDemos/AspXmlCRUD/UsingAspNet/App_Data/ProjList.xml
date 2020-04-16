@@ -1,35 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Projects>
   <project>
-    <Id>4</Id>
-    <ProjectName>
-    </ProjectName>
-    <Location>
-    </Location>
-  </project>
-  <project>
-    <Id>6</Id>
-    <ProjectName>Oye24</ProjectName>
+    <Id>1</Id>
+    <ProjectName>Oye24 V1</ProjectName>
     <Location>Indore</Location>
   </project>
   <project>
-    <Id>7</Id>
+    <Id>2</Id>
     <ProjectName>Mintto</ProjectName>
     <Location>Indore</Location>
   </project>
   <project>
-    <Id>8</Id>
+    <Id>3</Id>
     <ProjectName>LaCasa</ProjectName>
-    <Location>USA</Location>
+    <Location>USA &amp; EU</Location>
   </project>
   <project>
-    <Id>9</Id>
+    <Id>4</Id>
     <ProjectName>Scale Ban</ProjectName>
     <Location>Indore</Location>
   </project>
   <project>
-    <Id>10</Id>
+    <Id>5</Id>
     <ProjectName>TakeItApp</ProjectName>
-    <Location>Paris, France</Location>
+    <Location>EU</Location>
+  </project>
+  <project>
+    <Id>6</Id>
+    <ProjectName>Monster Buster Club</ProjectName>
+    <Location>Mumbai &amp; Paris</Location>
   </project>
 </Projects>

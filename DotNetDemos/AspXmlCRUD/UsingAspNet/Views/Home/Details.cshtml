@@ -9,7 +9,6 @@
 {
     @Html.AntiForgeryToken()
     @Html.HiddenFor(Model => Model.ProjId)
-
     <div class="form-group">
         <span class="form-control">@Model.ProjId</span>
         <span class="form-control">@Model.ProjName</span>
@@ -17,8 +16,9 @@
     </div>
     <div>Sure you want to Delete @Model.ProjName?</div>
     <div class="form-group">
-        <a href="@Url.Action("Delete", "Home", new { id = Model.ProjId })" class="btn btn-danger">Yes</a>
+        @*<a href="@Url.Action("Delete", "Home", new { id = Model.ProjId })" class="btn btn-danger">Yes</a>*@
         @*@Html.ActionLink("Yes", "Delete", "Home", new { id = Model.ProjId }, new { @class = "btn btn-danger" })*@
+        <input type="submit" value="Yes" class="btn btn-success" />
         @Html.ActionLink("Cancel", "Index", "Home", new { @class = "btn btn-default" })
     </div>
 }

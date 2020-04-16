@@ -7,6 +7,7 @@
     {
         count++;
     }
+    ProjectModels obj = new ProjectModels();
 }
 
 <h2>List of Projects</h2>
@@ -37,7 +38,7 @@
                             &nbsp;|&nbsp;
                         </span>
                         <span>
-                            @Html.ActionLink("Delete", "Details", new { id = project.ProjId }) <i class="fa fa-trash"></i>
+                            @Html.ActionLink("Delete", "Delete", new { id = project.ProjId }) <i class="fa fa-trash"></i>
                         </span>
                     </td>
                 </tr>
