@@ -14,41 +14,50 @@ namespace UsingAspNet.Controllers
 {
     public class HomeController : Controller
     {
+        //string for xml document location
         private const string xmlDocLocation = "~/App_Data/ProjList.xml";
+
         // object of model ProjectModels
         readonly ProjectModels pm = new ProjectModels();
+
+        //Load the XML file in XmlDocument.
+        private XmlDocument doc = new XmlDocument();
+
         #region GET-Methods
         // GET: Home
         public ActionResult Index()
         {
             List<ProjectModels> projects = new List<ProjectModels>();
-            //Load the XML file in XmlDocument.
-            XmlDocument doc = new XmlDocument();
+            //load xml file
             doc.Load(Server.MapPath(xmlDocLocation));
 
-            //Loop through the selected Nodes.
-            foreach (XmlNode node in doc.SelectNodes("/Projects/project"))
+            if (doc.DocumentElement != null)
             {
-                //Fetch the Node values and assign it to Model.
-                projects.Add(new ProjectModels
+                //Loop through the selected Nodes.
+                foreach (XmlNode node in doc.SelectNodes("/Projects/project"))
                 {
-                    ProjId = int.Parse(node["Id"].InnerText),
-                    ProjName = node["ProjectName"].InnerText,
-                    Location = node["Location"].InnerText
-                });
-            }
-            if(projects.Count > 0)
-            {
-                return View(projects);
+                    //Fetch the Node values and assign it to Model.
+                    projects.Add(new ProjectModels
+                    {
+                        ProjId = int.Parse(node["Id"].InnerText),
+                        ProjName = node["ProjectName"].InnerText,
+                        Location = node["Location"].InnerText
+                    });
+                }
+
+                //This if condition will only true after all project nodes are edded in "projects" list object i.e. should be return after foreach loop is completed
+                //Also return that list of node to the Index view
+                if (projects.Count > 0)
+                {
+                    return View(projects);
+                }
             }
             return View();
         }
 
-        // GET: Home/Details/5
+        // GET: Home/Details/5 or getting a single record
         public ActionResult Details(int id)
         {
-            // object of model ProjectModels
-            ProjectModels pm = new ProjectModels();
             XDocument xDocument = XDocument.Load(Server.MapPath(xmlDocLocation));
             var items = (from item in xDocument.Descendants("project")
                          where Convert.ToInt32(item.Element("Id").Value) == id
@@ -74,7 +83,7 @@ namespace UsingAspNet.Controllers
             return View();
         }
 
-        // GET: Home/Edit/5
+        // GET: Home/Edit/5 After getting a single record to edit send it to view
         public ActionResult Edit(int id)
         {
             // object of model ProjectModels
@@ -104,28 +113,25 @@ namespace UsingAspNet.Controllers
             try
             {
                 // TODO: Add delete logic here
-                XmlDocument XmlDocObj = new XmlDocument();
-                XmlDocObj.Load(Server.MapPath(xmlDocLocation));
-                XmlNode RootNode = XmlDocObj.SelectSingleNode("Projects");
+                doc.Load(Server.MapPath(xmlDocLocation));
+                XmlNode RootNode = doc.SelectSingleNode("Projects");
                 XmlNodeList projects = RootNode.ChildNodes;
 
                 XmlNode node = projects[0];
 
-                //int pId = int.Parse(Request.Form["_pId"]);
-
                 foreach (XmlNode n in projects)
                 {
+                    //match the selected id and nodes inner text
                     if (int.Parse(n["Id"].InnerText) == id)
                     {
                         node = n;
                     }
                 }
 
-                node.RemoveAll();
-                RootNode.RemoveChild(node);
+                node.RemoveAll();   //removes nodes inside selected "project"
+                RootNode.RemoveChild(node); //removes selected "project" node
 
-                XmlDocObj.Save(Server.MapPath(xmlDocLocation));
-
+                doc.Save(Server.MapPath(xmlDocLocation));
 
                 return RedirectToAction("Index");
             }
@@ -144,13 +150,12 @@ namespace UsingAspNet.Controllers
             try
             {
                 // TODO: Add insert logic here
-                XmlDocument xmlDocument = new XmlDocument();
-                xmlDocument.Load(Server.MapPath(xmlDocLocation));
-                XmlNode node = xmlDocument.SelectSingleNode("Projects");
+                doc.Load(Server.MapPath(xmlDocLocation));
+                XmlNode node = doc.SelectSingleNode("Projects");
                 XmlNodeList nodeList = node.ChildNodes;
 
                 //get the last id
-                var x = xmlDocument.GetElementsByTagName("Id");
+                var x = doc.GetElementsByTagName("Id");
                 int Max = 0;
                 foreach (XmlElement item in x)
                 {
@@ -164,23 +169,24 @@ namespace UsingAspNet.Controllers
 
                 //now to new node
                 XmlNode newNode = node.AppendChild(
-                        xmlDocument.CreateNode(XmlNodeType.Element, "project", "")
+                        doc.CreateNode(XmlNodeType.Element, "project", "")
                     );
                 // TODO: Add last incremental Id logic
                 newNode.AppendChild(
-                        xmlDocument.CreateNode(XmlNodeType.Element, "Id", "")
+                        doc.CreateNode(XmlNodeType.Element, "Id", "")
                     ).InnerText = Max.ToString();
                 // add project name
                 newNode.AppendChild(
-                        xmlDocument.CreateNode(XmlNodeType.Element, "ProjectName", "")
+                        doc.CreateNode(XmlNodeType.Element, "ProjectName", "")
                     ).InnerText = project.ProjName;
                 // add project location
                 newNode.AppendChild(
-                        xmlDocument.CreateNode(XmlNodeType.Element, "Location", "")
+                        doc.CreateNode(XmlNodeType.Element, "Location", "")
                     ).InnerText = project.Location;
 
                 // now save the changes
-                xmlDocument.Save(Server.MapPath(xmlDocLocation));
+                doc.Save(Server.MapPath(xmlDocLocation));
+
                 return RedirectToAction("Index");
             }
             catch
@@ -205,24 +211,26 @@ namespace UsingAspNet.Controllers
 
         public ActionResult Update(ProjectModels project, FormCollection collection)
         {
-            XmlDocument XmlDocObj = new XmlDocument();
-            XmlDocObj.Load(Server.MapPath(xmlDocLocation));
-            XmlNode RootNode = XmlDocObj.SelectSingleNode("Projects");
+            doc.Load(Server.MapPath(xmlDocLocation));
+            XmlNode RootNode = doc.SelectSingleNode("Projects");
             XmlNodeList projects = RootNode.ChildNodes;
 
             XmlNode node = projects[0];
+
             foreach (XmlNode ns in projects)
             {
+                //match the selected id
                 if (ns["Id"].InnerText == project.ProjId.ToString())
                 {
                     node = ns;
                 }
             }
 
+            //update the node value from new value entered
             node["ProjectName"].InnerText = project.ProjName;
             node["Location"].InnerText = project.Location;
 
-            XmlDocObj.Save(Server.MapPath(xmlDocLocation));
+            doc.Save(Server.MapPath(xmlDocLocation));
 
             return RedirectToAction("Index");
         }

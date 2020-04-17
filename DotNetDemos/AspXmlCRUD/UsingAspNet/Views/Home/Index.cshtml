@@ -2,52 +2,68 @@
 @model IEnumerable<ProjectModels>
 @{
     ViewBag.Title = "Index";
+    //get total number of projects
     int count = 0;
-    foreach (ProjectModels project in Model)
+    //if projects exsits else count will remain 0 and need to add projects first
+    if (Model != null)
     {
-        count++;
+        foreach (ProjectModels project in Model)
+        {
+            count++;
+        }
     }
-    ProjectModels obj = new ProjectModels();
 }
 
-<h2>List of Projects</h2>
-
-<div>
-    <table class="table table-responsive table-striped">
-        <caption>Total Projects = @count</caption>
-        <thead>
-            <tr>
-                <th>Project Id</th>
-                <th>Project Name</th>
-                <th>Location</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var project in Model)
-            {
+@if (count > 0)
+{
+    <h2>List of Projects</h2>
+    <div>
+        <table class="table table-responsive table-striped">
+            <caption>Total Projects = @count</caption>
+            <thead>
                 <tr>
-                    <td>@project.ProjId</td>
-                    <td>@project.ProjName</td>
-                    <td>@project.Location</td>
-                    <td>
-                        <span>
-                            @Html.ActionLink("Edit", "Edit", new { id = project.ProjId }) <i class="fa fa-pencil"></i>
-                        </span>
-                        <span>
-                            &nbsp;|&nbsp;
-                        </span>
-                        <span>
-                            @Html.ActionLink("Delete", "Delete", new { id = project.ProjId }) <i class="fa fa-trash"></i>
-                        </span>
+                    <th>Project Id</th>
+                    <th>Project Name</th>
+                    <th>Location</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var project in Model)
+                {
+                    <tr>
+                        <td>@project.ProjId</td>
+                        <td>@project.ProjName</td>
+                        <td>@project.Location</td>
+                        <td>
+                            <span>
+                                @Html.ActionLink("Edit", "Edit", new { id = project.ProjId }) <i class="fa fa-pencil"></i>
+                            </span>
+                            <span>
+                                &nbsp;|&nbsp;
+                            </span>
+                            <span>
+                                @Html.ActionLink("Delete", "Delete", new { id = project.ProjId }) <i class="fa fa-trash"></i>
+                            </span>
+                        </td>
+                    </tr>
+                }
+                <tr>
+                    <td colspan="4">
+                        <!--Call Create method-->
+                        @Html.ActionLink("Add new Project", "Create", "Home")
                     </td>
                 </tr>
-            }
-            <tr>
-                <td colspan="4">
-                    @Html.ActionLink("Add new Project", "Create", "Home")
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div>
+        <h2>
+            No projects for now. Add new projects first
+        </h2>
+        @Html.ActionLink("Add new Project", "Create", "Home")
+    </div>
+}

@@ -22,6 +22,9 @@ namespace UsingAspNet.Models
         ///</summary>
         [Required]
         public string Location { get; set; }
+        ///<summary>
+        /// I have not used this
+        ///</summary>
         public bool IsEdit { get; set; }
     }
 }

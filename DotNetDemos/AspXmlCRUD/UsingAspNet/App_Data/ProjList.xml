@@ -28,6 +28,11 @@
   <project>
     <Id>6</Id>
     <ProjectName>Monster Buster Club</ProjectName>
-    <Location>Mumbai &amp; Paris</Location>
+    <Location>France &amp; Made in India</Location>
+  </project>
+  <project>
+    <Id>7</Id>
+    <ProjectName>Servicewala4u</ProjectName>
+    <Location>Indore</Location>
   </project>
 </Projects>

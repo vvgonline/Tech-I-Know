@@ -5,6 +5,7 @@
 
     <h2>Edit Project</h2>
 
+@*FormMethod.Post is important to write*@
 @using (Html.BeginForm("Update", "Home", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
@@ -33,9 +34,6 @@
                 <tr>
                     <td colspan="2">
                         <input id="btnAdd" class="btn btn-success" type="submit" value="Edit" />
-                        @*<a href="@Url.Action("Update", "Home", FormMethod.Post)"
-        class="btn btn-success">Edit</a>*@
-                        
                     </td>
                 </tr>
             </tbody>
