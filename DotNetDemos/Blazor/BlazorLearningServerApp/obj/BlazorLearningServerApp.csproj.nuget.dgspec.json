@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj": {}
+    "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj": {
+    "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
+        "projectUniqueName": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
         "projectName": "BlazorLearningServerApp",
-        "projectPath": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
+        "projectPath": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
         "packagesPath": "C:\\Users\\vvgon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\obj\\",
+        "outputPath": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

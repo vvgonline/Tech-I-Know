@@ -1,0 +1,3 @@
+Reference GitHub Libraries:
+	1. https://github.com/Basaingeal/Razor.Clipboard
+	2. https://github.com/EdCharbeneau/BlazorSize
