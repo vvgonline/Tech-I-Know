@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj": {}
+    "C:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\blazorlearningserverapp\\BlazorLearningServerApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj": {
+    "C:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\blazorlearningserverapp\\BlazorLearningServerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
+        "projectUniqueName": "C:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\blazorlearningserverapp\\BlazorLearningServerApp.csproj",
         "projectName": "BlazorLearningServerApp",
-        "projectPath": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
+        "projectPath": "C:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\blazorlearningserverapp\\BlazorLearningServerApp.csproj",
         "packagesPath": "C:\\Users\\vvgon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\obj\\",
+        "outputPath": "C:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\blazorlearningserverapp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

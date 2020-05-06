@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
+  "FilePath": "c:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -11,6 +11,55 @@
   },
   "ProjectWorkspaceState": {
     "TagHelpers": [
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorLearningServerApp.App",
+        "AssemblyName": "BlazorLearningServerApp",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorLearningServerApp.App"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorLearningServerApp.App",
+        "AssemblyName": "BlazorLearningServerApp",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorLearningServerApp.App",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorLearningServerApp.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
       {
         "Kind": "Components.Component",
         "Name": "BlazorLearningServerApp.Pages.About",
@@ -258,39 +307,96 @@
       },
       {
         "Kind": "Components.Component",
-        "Name": "BlazorLearningServerApp.App",
+        "Name": "BlazorLearningServerApp.Shared.MainLayout",
         "AssemblyName": "BlazorLearningServerApp",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App",
+            "TagName": "MainLayout",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
             "Diagnostics": []
           }
         ],
-        "BoundAttributes": [],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorLearningServerApp.App"
+          "Common.TypeName": "BlazorLearningServerApp.Shared.MainLayout"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "BlazorLearningServerApp.App",
+        "Name": "BlazorLearningServerApp.Shared.MainLayout",
         "AssemblyName": "BlazorLearningServerApp",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorLearningServerApp.App",
+            "TagName": "BlazorLearningServerApp.Shared.MainLayout",
             "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorLearningServerApp.Shared.MainLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.ChildContent",
+        "Name": "BlazorLearningServerApp.Shared.MainLayout.Body",
+        "AssemblyName": "BlazorLearningServerApp",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "MainLayout",
             "TagStructure": 0,
             "Attributes": [],
             "Diagnostics": []
@@ -300,8 +406,34 @@
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorLearningServerApp.App",
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "BlazorLearningServerApp.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "Kind": "Components.ChildContent",
+        "Name": "BlazorLearningServerApp.Shared.MainLayout.Body",
+        "AssemblyName": "BlazorLearningServerApp",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "BlazorLearningServerApp.Shared.MainLayout",
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "BlazorLearningServerApp.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -439,7 +571,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -536,7 +669,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -627,7 +761,8 @@
             "Documentation": "Specifies the parameter name for the 'NotAuthorized' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -667,7 +802,8 @@
             "Documentation": "Specifies the parameter name for the 'NotAuthorized' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -810,7 +946,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -951,7 +1088,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -991,7 +1129,8 @@
             "Documentation": "Specifies the parameter name for the 'Authorized' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -1031,7 +1170,8 @@
             "Documentation": "Specifies the parameter name for the 'Authorized' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -1123,7 +1263,8 @@
             "Documentation": "Specifies the parameter name for the 'ChildContent' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -1163,7 +1304,8 @@
             "Documentation": "Specifies the parameter name for the 'ChildContent' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -1204,7 +1346,8 @@
             "Documentation": "Specifies the parameter name for the 'NotAuthorized' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -1244,7 +1387,8 @@
             "Documentation": "Specifies the parameter name for the 'NotAuthorized' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -1992,7 +2136,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -2089,7 +2234,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -2129,7 +2275,8 @@
             "Documentation": "Specifies the parameter name for the 'Found' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -2169,7 +2316,8 @@
             "Documentation": "Specifies the parameter name for the 'Found' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -2412,7 +2560,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -2553,7 +2702,8 @@
             "Documentation": "Specifies the parameter name for all child content expressions.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -2593,7 +2743,8 @@
             "Documentation": "Specifies the parameter name for the 'ChildContent' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -2633,7 +2784,8 @@
             "Documentation": "Specifies the parameter name for the 'ChildContent' child content expression.",
             "Diagnostics": [],
             "Metadata": {
-              "Components.ChildContentParameterName": "True"
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
             },
             "BoundAttributeParameters": []
           }
@@ -14783,7 +14935,7 @@
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
-        "Documentation": null,
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting elements containing attributes with URL expected values.\n            </summary>\n            <remarks>Resolves URLs starting with '~/' (relative to the application's 'webroot' setting) that are not\n            targeted by other <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" />s. Runs prior to other <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" />s to ensure\n            application-relative URLs are resolved.</remarks>\n        ",
         "TagOutputHint": null,
         "CaseSensitive": false,
         "TagMatchingRules": [
@@ -20844,53 +20996,53 @@
   "RootNamespace": "BlazorLearningServerApp",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Pages\\About.razor",
-      "TargetPath": "Pages\\About.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Pages\\Error.razor",
+      "FilePath": "c:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\BlazorLearningServerApp\\Pages\\Error.razor",
       "TargetPath": "Pages\\Error.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Pages\\_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
+      "FilePath": "c:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\BlazorLearningServerApp\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
     },
     {
-      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Pages\\Counter.razor",
+      "FilePath": "c:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\BlazorLearningServerApp\\Pages\\Counter.razor",
       "TargetPath": "Pages\\Counter.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\Blazor\\BlazorLearningServerApp\\Shared\\NavMenu.razor",
+      "FilePath": "c:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\BlazorLearningServerApp\\Pages\\_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\BlazorLearningServerApp\\Pages\\Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\BlazorLearningServerApp\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\BlazorLearningServerApp\\App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\BlazorLearningServerApp\\Shared\\NavMenu.razor",
       "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\BlazorLearningServerApp\\Pages\\FetchData.razor",
+      "TargetPath": "Pages\\FetchData.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\BlazorLearningServerApp\\Pages\\About.razor",
+      "TargetPath": "Pages\\About.razor",
       "FileKind": "component"
     }
   ],

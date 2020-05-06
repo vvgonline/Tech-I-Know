@@ -1,10 +1,22 @@
 ﻿@page "/"
+@inject IJSRuntime JSRuntime;
 
 @code {
     // simple string value can be added and displayed using c#
     private string msgStringOne = "Blazor";
+    private string consoleMsg = "Hello Blazor World";
+
     // we can add some styling to this string using C#
     private string _stringFontStyle = "italic";
     private string _stringColor = "#ce9178";
+
+    //console print test
+    protected override void OnInitialized()
+    {
+        JSRuntime.InvokeAsync<string>("console.log", consoleMsg);
+    }
 }
-<h1>Hello, <span style="font-style:@_stringFontStyle; color:@_stringColor">@msgStringOne</span> world!</h1>
+
+<h1>
+    Hello, <span style="font-style:@_stringFontStyle; color:@_stringColor">@msgStringOne</span> world!
+</h1>
