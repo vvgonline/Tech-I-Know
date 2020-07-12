@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h5yq+XGwXVdx4tR9OPAd3zS/reOzJd99U/T/mYllCVK93/kiz358WZyntfJ1KXp+wwL5CGz+io329csb/pJyzw==",
+  "dgSpecHash": "/tAj1V0O6BhoVZi2YlRF006/DaIQiBKhFD9YWjRvpdwP8t4k5RXtJcqcjgxgiFhJt5n6eDQqRg02nYehZP63cQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vvgon\\source\\github\\tech-i-know\\dotnetdemos\\blazor\\blazorlearningserverapp\\BlazorLearningServerApp.csproj",
+  "projectFilePath": "C:\\Users\\vvgon\\Source\\Repos\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

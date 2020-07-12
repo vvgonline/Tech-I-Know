@@ -9,23 +9,24 @@
   },
   "packageFolders": {
     "C:\\Users\\vvgon\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
+      "projectUniqueName": "C:\\Users\\vvgon\\Source\\Repos\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
       "projectName": "BlazorLearningServerApp",
-      "projectPath": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
+      "projectPath": "C:\\Users\\vvgon\\Source\\Repos\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\BlazorLearningServerApp.csproj",
       "packagesPath": "C:\\Users\\vvgon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vvgon\\Source\\github\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\obj\\",
+      "outputPath": "C:\\Users\\vvgon\\Source\\Repos\\Tech-I-Know\\DotNetDemos\\Blazor\\BlazorLearningServerApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\vvgon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -65,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
