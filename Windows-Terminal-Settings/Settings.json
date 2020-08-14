@@ -17,11 +17,11 @@
       "fontFace": "Cascadia Code",
       "useAcrylic": true,
       "acrylicOpacity": 0.65,
-      "background": "#27212e",
-      "cursorColor": "#EB64B9",
+      "background": "#140F0C",
+      "cursorColor": "#A13B63",
       "cursorShape": "filledBox",
       "snapOnInput": true,
-      "backgroundImage": "C:/Users/vvgon/OneDrive/Pictures/Saved Pictures/vvgonline/vvgonline-logo-8k.png", //or github url
+      "backgroundImage": "C:/Users/vvgon/OneDrive/Pictures/Saved Pictures/vvgonline/logo2020v2-8k.png", //or github url
       "backgroundImageStretchMode": "uniformToFill",
       "backgroundImageOpacity": 0.05
     },
