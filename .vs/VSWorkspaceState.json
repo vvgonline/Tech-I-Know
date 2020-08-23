@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Windows-Terminal-Settings"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\Windows-Terminal-Settings\\Settings.json",
   "PreviewInSolutionExplorer": false
 }
