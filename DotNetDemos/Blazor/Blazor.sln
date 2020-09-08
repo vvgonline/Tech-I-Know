@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution-Folder", "Solution
 		Notes.txt = Notes.txt
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWASM", "BlazorAppWASM\BlazorAppWASM.csproj", "{36AA545D-D710-4B5A-8FB6-AFF83A71D1BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,18 @@ Global
 		{F902E745-9292-4396-87A1-59ACA9C2FC82}.Release|x64.Build.0 = Release|Any CPU
 		{F902E745-9292-4396-87A1-59ACA9C2FC82}.Release|x86.ActiveCfg = Release|Any CPU
 		{F902E745-9292-4396-87A1-59ACA9C2FC82}.Release|x86.Build.0 = Release|Any CPU
+		{36AA545D-D710-4B5A-8FB6-AFF83A71D1BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36AA545D-D710-4B5A-8FB6-AFF83A71D1BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36AA545D-D710-4B5A-8FB6-AFF83A71D1BA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{36AA545D-D710-4B5A-8FB6-AFF83A71D1BA}.Debug|x64.Build.0 = Debug|Any CPU
+		{36AA545D-D710-4B5A-8FB6-AFF83A71D1BA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{36AA545D-D710-4B5A-8FB6-AFF83A71D1BA}.Debug|x86.Build.0 = Debug|Any CPU
+		{36AA545D-D710-4B5A-8FB6-AFF83A71D1BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36AA545D-D710-4B5A-8FB6-AFF83A71D1BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36AA545D-D710-4B5A-8FB6-AFF83A71D1BA}.Release|x64.ActiveCfg = Release|Any CPU
+		{36AA545D-D710-4B5A-8FB6-AFF83A71D1BA}.Release|x64.Build.0 = Release|Any CPU
+		{36AA545D-D710-4B5A-8FB6-AFF83A71D1BA}.Release|x86.ActiveCfg = Release|Any CPU
+		{36AA545D-D710-4B5A-8FB6-AFF83A71D1BA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Windows-Terminal-Settings"
+    "\\DotNetDemos",
+    "\\DotNetDemos\\Blazor",
+    "\\DotNetDemos\\Blazor\\BlazorLearningServerApp"
   ],
-  "SelectedNode": "\\Windows-Terminal-Settings\\Settings.json",
+  "SelectedNode": "\\DotNetDemos\\Blazor\\Blazor.sln",
   "PreviewInSolutionExplorer": false
 }

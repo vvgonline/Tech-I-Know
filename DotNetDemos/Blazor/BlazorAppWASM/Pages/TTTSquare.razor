@@ -1,0 +1,24 @@
+﻿@code {
+    //Check char code START
+    //private char value = ' ';
+    //private void XO()
+    //{
+    //    value = value == 'O' ? 'X' : 'O';
+    //}
+    //Check char code END /
+
+    //value can be wither X or O
+    [Parameter]
+    public char value { get; set; }
+
+    //event call handler
+    [Parameter]
+    public EventCallback Click { get; set; }
+
+}
+
+@*check if we can change char in game*@
+@*<div class="tttsquare" @onclick="XO">@value</div>*@
+
+@* let put some event hanlder for our game *@
+<div class="tttsquare" @onclick="@Click">@value</div>

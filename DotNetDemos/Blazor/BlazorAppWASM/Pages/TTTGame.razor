@@ -1,0 +1,94 @@
+﻿@page "/tttgame"
+
+<h2>Tic Tac Toe</h2>
+<hr />
+@* Game Logic Start *@
+@*<h3>Next player: "@(xIsNext ? 'X' : 'O')"</h3>*@
+@{
+    var gameStatus = GameHelpers.CalculateGameStatus(values);
+    string status;
+    if (gameStatus == GameStatus.X_wins)
+    {
+        status = "Winner: X";
+    }
+    else if (gameStatus == GameStatus.O_wins)
+    {
+        status = "Winner: O";
+    }
+    else if (gameStatus == GameStatus.Draw)
+    {
+        status = "Draw !";
+    }
+    else
+    {
+        char nextPlayer = xIsNext ? 'X' : 'O';
+        status = $"Next player: {nextPlayer}";
+    }
+    <h3>@status</h3>
+}
+<div class="tttbase">
+    @* make sure there are 9 calls to TTTSquare components only used for game for initial check stage *@
+    @* 1 *@
+    <!--<TTTSquare />-->
+    @* 2 *@
+    <!--<TTTSquare />-->
+    @* 3 *@
+    <!--<TTTSquare />-->
+    @* 4 *@
+    <!--<TTTSquare />-->
+    @* 5 *@
+    <!--<TTTSquare />-->
+    @* 6 *@
+    <!--<TTTSquare />-->
+    @* 7 *@
+    <!--<TTTSquare />-->
+    @* 8 *@
+    <!--<TTTSquare />-->
+    @* 9 *@
+    <!--<TTTSquare />-->
+    @* Display TTTSquare *@
+    @for (int i = 0; i < 9; i++)
+    {
+        int counter = i;
+        <TTTSquare @key=counter value=values[counter] Click="@(()=> HandleClick(counter))" />
+    }
+</div>
+<button class="btn btn-primary" @onclick="PlayAgainHandler">Play again</button>
+
+@code {
+    private bool xIsNext;
+    public char[] values = new char[9];
+    protected override void OnInitialized()
+    {
+        InitState();
+    }
+    private void HandleClick(int i)
+    {
+        if (values[i] != ' ')
+        {
+            return;
+        }
+        bool isGameFiniched = GameHelpers.CalculateGameStatus(values) != GameStatus.NotYetFiniched;
+        if (isGameFiniched)
+        {
+            return;
+        }
+        bool xToPlay = xIsNext;
+        values[i] = xToPlay ? 'X' : 'O';
+        xIsNext = !xToPlay;
+    }
+    private void PlayAgainHandler()
+    {
+        InitState();
+    }
+    private void InitState()
+    {
+        values = new char[9]
+        {
+        ' ', ' ', ' ',
+        ' ', ' ', ' ',
+        ' ', ' ', ' '
+        };
+        xIsNext = true;
+    }
+}

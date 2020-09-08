@@ -1,3 +1,6 @@
 Reference GitHub Libraries:
-	1. https://github.com/Basaingeal/Razor.Clipboard
+	1. https://github.com/AdrienTorris/awesome-blazor
 	2. https://github.com/EdCharbeneau/BlazorSize
+	3. https://github.com/Basaingeal/Razor.Clipboard
+	4. https://lghou.com/blog/blazor-webassembly [Tic Tac Toe]
+	5. https://www.roundthecode.com/dotnet/blazor [Simple blog]
