@@ -3,10 +3,12 @@
 ################################################################################
 .vs
 .vscode
-/AspMySql/MVCMySql/.vs/MVCMySql/v16/Server/sqlite3
+AspMySql/MVCMySql/.vs
 tech-boilerplates/frontend/TypeScript/node_modules
-/To-Do-Apps/inAspNetCore/To-Do-Api-Demo/.vs/To-Do-Api-Demo
-/Windows-Terminal-Settings/.vs
+To-Do-Apps/inAspNetCore/To-Do-Api-Demo/.vs
+Windows-Terminal-Settings/.vs
 DotNetDemos/AspXmlCRUD/.vs
+DotNetDemos/AspXmlCRUD/packages
 DotNetDemos/AspXmlCRUD/UsingAspNet/obj
 DotNetDemos/MVCMySql/obj
+DotNetDemos/MVCMySql/bin
