@@ -1,0 +1,7 @@
+Old documentation on official microsoft docs website: https://docs.microsoft.com/en-us/archive/msdn-magazine/2014/may/csharp-best-practices-dangers-of-violating-solid-principles-in-csharp
+Wikipedia page: https://en.wikipedia.org/wiki/SOLID
+Single Respobsibility Principle official blog: https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html
+
+TODO:
+    1. Make a static website for documentation
+    2. Make example project [choose a language for it. if using c# make demo project inside DotNetDemos and link it to static website]
