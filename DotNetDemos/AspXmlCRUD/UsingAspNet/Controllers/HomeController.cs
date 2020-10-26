@@ -236,4 +236,11 @@ namespace UsingAspNet.Controllers
         }
         #endregion
     }
+
+    internal class ProjectItems
+    {
+        public int Id { get; set; }
+        public string ProjectName { get; set; }
+        public string Location { get; set; }
+    }
 }
