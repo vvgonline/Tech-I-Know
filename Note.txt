@@ -1,0 +1,2 @@
+.gitignore problem
+https://stackoverflow.com/questions/25436312/gitignore-not-working

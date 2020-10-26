@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 .vs
@@ -9,3 +9,4 @@ tech-boilerplates/frontend/TypeScript/node_modules
 /Windows-Terminal-Settings/.vs
 DotNetDemos/AspXmlCRUD/.vs
 DotNetDemos/AspXmlCRUD/UsingAspNet/obj
+DotNetDemos/MVCMySql/obj
