@@ -1,9 +1,0 @@
-C:\Users\vvgon\source\repos\Tech-I-Know\DotNetDemos\Blazor\BlazorASPHostedWASM\Shared\bin\Debug\netstandard2.1\BlazorASPHostedWASM.Shared.deps.json
-C:\Users\vvgon\source\repos\Tech-I-Know\DotNetDemos\Blazor\BlazorASPHostedWASM\Shared\bin\Debug\netstandard2.1\BlazorASPHostedWASM.Shared.dll
-C:\Users\vvgon\source\repos\Tech-I-Know\DotNetDemos\Blazor\BlazorASPHostedWASM\Shared\bin\Debug\netstandard2.1\BlazorASPHostedWASM.Shared.pdb
-C:\Users\vvgon\source\repos\Tech-I-Know\DotNetDemos\Blazor\BlazorASPHostedWASM\Shared\obj\Debug\netstandard2.1\BlazorASPHostedWASM.Shared.csprojAssemblyReference.cache
-C:\Users\vvgon\source\repos\Tech-I-Know\DotNetDemos\Blazor\BlazorASPHostedWASM\Shared\obj\Debug\netstandard2.1\BlazorASPHostedWASM.Shared.AssemblyInfoInputs.cache
-C:\Users\vvgon\source\repos\Tech-I-Know\DotNetDemos\Blazor\BlazorASPHostedWASM\Shared\obj\Debug\netstandard2.1\BlazorASPHostedWASM.Shared.AssemblyInfo.cs
-C:\Users\vvgon\source\repos\Tech-I-Know\DotNetDemos\Blazor\BlazorASPHostedWASM\Shared\obj\Debug\netstandard2.1\BlazorASPHostedWASM.Shared.csproj.CoreCompileInputs.cache
-C:\Users\vvgon\source\repos\Tech-I-Know\DotNetDemos\Blazor\BlazorASPHostedWASM\Shared\obj\Debug\netstandard2.1\BlazorASPHostedWASM.Shared.dll
-C:\Users\vvgon\source\repos\Tech-I-Know\DotNetDemos\Blazor\BlazorASPHostedWASM\Shared\obj\Debug\netstandard2.1\BlazorASPHostedWASM.Shared.pdb
