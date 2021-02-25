@@ -15,3 +15,4 @@ DotNetDemos/MVCMySql/obj
 DotNetDemos/MVCMySql/bin
 /DotNetDemos/YouTubeAPI/obj
 To-Do-Apps/inAspNetCore/To-Do-Api-Demo/obj
+/DotNetDemos/YouTubeAPI/bin/Debug/net5.0
