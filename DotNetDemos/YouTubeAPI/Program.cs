@@ -22,7 +22,7 @@ namespace YouTubeAPI
         }
 
         public static void getYTVideos(){
-            YouTubeService yt = new YouTubeService(new BaseClientService.Initializer() { ApiKey = "AIzaSyCinG0shBtUVFt6IVvCDZYVqiefVwPi0Wc" });
+            YouTubeService yt = new YouTubeService(new BaseClientService.Initializer() { ApiKey = "YOUR_API_KEY" });
 
             var searchListRequest = yt.Search.List("snippet");
             searchListRequest.ChannelId = "UCsFTSQ6exutOIpP-wHl8qQQ";
