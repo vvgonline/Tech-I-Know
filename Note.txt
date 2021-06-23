@@ -10,7 +10,7 @@ https://stackoverflow.com/questions/25436312/gitignore-not-working
             {
                 credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
                     GoogleClientSecrets.Load(stream).Secrets,
-                    // This OAuth 2.0 access scope allows for read-only access to the authenticated 
+                    // This OAuth 2.0 access scope allows for read-only access to the authenticated
                     // user's account, but not other types of account access.
                     new[] { YouTubeService.Scope.YoutubeReadonly },
                     "user",
