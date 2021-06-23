@@ -1,0 +1,181 @@
+body {
+  svg {
+    #identitySkills {
+      z-index: auto;
+
+      #logo {
+        #blueV {
+          animation-delay: 0s;
+          animation-name: translateUpFadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in;
+        }
+        #yellowV {
+          animation-delay: 0.2s;
+          animation-name: translateUpFadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in;
+        }
+        #barGroup {
+          animation-delay: 0.4s;
+          animation-name: translateDownFadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in;
+        }
+      }
+
+      #fullName {
+        z-index: 0;
+
+        #Vaibhav {
+          animation-delay: 0.6s;
+          animation-name: FadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in;
+        }
+
+        #Vijay {
+          animation-delay: 0.8s;
+          animation-name: FadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in;
+        }
+
+        #Gupta {
+          animation-delay: 1s;
+          animation-name: FadeIn;
+          animation-duration: 1.5s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in;
+        }
+      }
+
+      #online {
+        animation-delay: 1.2s;
+        animation-name: translateUpFadeIn;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in;
+      }
+
+      #design {
+        z-index: auto;
+
+        #designText {
+          animation-delay: 1.6s;
+          animation-name: FadeIn;
+          animation-duration: 1s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in;
+        }
+
+        #designIcon {
+          animation-delay: 1.6s;
+          animation-name: translateDownFadeIn;
+          animation-duration: 0.5s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in;
+        }
+      }
+
+      #code {
+        z-index: auto;
+
+        #codeText {
+          animation-delay: 2s;
+          animation-name: FadeIn;
+          animation-duration: 1s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in;
+        }
+
+        #codeIcon {
+          animation-delay: 2s;
+          animation-name: translateDownFadeIn;
+          animation-duration: 0.5s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in;
+        }
+      }
+
+      #market {
+        z-index: auto;
+
+        #marketText {
+          animation-delay: 2.4s;
+          animation-name: FadeIn;
+          animation-duration: 1s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in;
+        }
+
+        #marketIcon {
+          animation-delay: 2.4s;
+          animation-name: translateDownFadeIn;
+          animation-duration: 0.5s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in;
+        }
+      }
+
+      #training {
+        z-index: auto;
+
+        #trainingText {
+          animation-delay: 2.8s;
+          animation-name: FadeIn;
+          animation-duration: 1s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in;
+        }
+
+        #trainingIcon {
+          animation-delay: 2.8s;
+          animation-name: translateDownFadeIn;
+          animation-duration: 0.5s;
+          animation-fill-mode: both;
+          animation-timing-function: ease-in;
+        }
+      }
+    }
+  }
+}
+
+/* #region animation */
+@keyframes translateUpFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10%);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes translateDownFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(0, -10%);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/* #endregion animation */

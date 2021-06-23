@@ -133,7 +133,7 @@ body {
     }
 }
 
-/* animation */
+/* #region animation */
 @keyframes FadeIn {
     0% {
         opacity: 0;
@@ -191,3 +191,4 @@ body {
         transform: translate(0);
     }
 }
+/* #endregion animation */

@@ -16,3 +16,5 @@ DotNetDemos/MVCMySql/bin
 /DotNetDemos/YouTubeAPI/obj
 To-Do-Apps/inAspNetCore/To-Do-Api-Demo/obj
 DotNetDemos/YouTubeAPI/bin
+/frontEndSnippets/blazorComponents/obj
+/frontEndSnippets/blazorComponents/bin/Debug/net5.0
