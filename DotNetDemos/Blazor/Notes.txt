@@ -5,4 +5,4 @@ Reference GitHub Libraries:
 	4. https://lghou.com/blog/blazor-webassembly [Tic Tac Toe]
 	5. https://www.roundthecode.com/dotnet/blazor [Simple blog]
 
-	TODO: add blazor webassembly app with web api for backend services and make this c# learning app
+	TODO: add blazor webassembly app with web api for backend services and make this CSharp(C#) learning app
