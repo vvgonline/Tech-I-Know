@@ -8,8 +8,7 @@ namespace To_Do_Api_Demo.Models
 {
     public class TodoContext : DbContext
     {
-        public TodoContext(DbContextOptions<TodoContext> options)
-            : base(options)
+        public TodoContext(DbContextOptions<TodoContext> options) : base(options)
         {
         }
 

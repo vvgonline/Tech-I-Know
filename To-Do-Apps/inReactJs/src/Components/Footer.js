@@ -1,10 +1,10 @@
 import React from "react";
 
 function Footer() {
-    return(
+    return (
         <div className="container">
             <span className="text-footer">
-            Made by <a href="http://vvgonline.net">vvgonline.net</a> using <a href="https://reactjs.org/">react</a>
+                Made by <a href="http://vvgonline.net">vvgonline.net</a> using <a href="https://reactjs.org/">react</a>
             </span>
         </div>
     );

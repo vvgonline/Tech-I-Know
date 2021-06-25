@@ -13,7 +13,7 @@ function TodoLI(props){
                 {props.item.text}
             </label>
         </span>
-    );  
+    );
 }
 
 export default TodoLI;

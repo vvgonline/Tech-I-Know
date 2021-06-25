@@ -54,7 +54,6 @@ const Data = [
         text: "Developing a Full Stack app using React",
         completed: false
     }
-
 ]
 
 export default Data

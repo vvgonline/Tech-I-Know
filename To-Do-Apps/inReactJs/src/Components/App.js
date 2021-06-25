@@ -6,28 +6,28 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      todoList : Data
+      todoList: Data
     }
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(id) {
     this.setState(prevState => {
-        const updatedTodos = prevState.todoList.map(todo => {
-            if (todo.id === id) {
-                todo.completed = !todo.completed
-            }
-            return todo
-        })
-        return {
-          todoList: updatedTodos
+      const updatedTodos = prevState.todoList.map(todo => {
+        if (todo.id === id) {
+          todo.completed = !todo.completed
         }
-    })
+        return todo
+      });
+      return {
+        todoList: updatedTodos
+      }
+    });
   }
 
   render() {
-    const todoItems = this.state.todoList.map(item => <TodoLI key={item.id} item={item} handleChange={this.handleChange}/>)
-    return (      
+    const todoItems = this.state.todoList.map(item => <TodoLI key={item.id} item={item} handleChange={this.handleChange} />)
+    return (
       <div className="App">
         <header>
           <h1>
