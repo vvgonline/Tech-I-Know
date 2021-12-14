@@ -7,6 +7,11 @@ footer {
   background-color: bisque;
 }
 
+footer #currentYear {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5em;
+}
+
 footer a {
   text-decoration: none;
 }

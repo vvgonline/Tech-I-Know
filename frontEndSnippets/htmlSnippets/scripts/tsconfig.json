@@ -1,0 +1,7 @@
+{
+    "files": ["src/app.ts"],
+    "compilerOptions": {
+      "noImplicitAny": true,
+      "target": "es2015"
+    }
+  }
