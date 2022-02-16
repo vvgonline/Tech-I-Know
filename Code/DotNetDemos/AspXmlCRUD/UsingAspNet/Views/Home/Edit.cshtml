@@ -1,0 +1,42 @@
+﻿@model UsingAspNet.Models.ProjectModels
+@{
+    ViewBag.Title = "Edit";
+}
+
+    <h2>Edit Project</h2>
+
+@*FormMethod.Post is important to write*@
+@using (Html.BeginForm("Update", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.ProjId)
+    <div>
+        <table class="table table-responsive table-striped">
+            <tbody>
+                <tr>
+                    <td>@Html.LabelFor(m => m.ProjName)</td>
+                    <td><span class="form-control">@Model.ProjId</span></td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.ProjName)</td>
+                    <td>
+                        <span>@Html.TextBoxFor(m => m.ProjName, new { @class = "form-control" })</span>
+                        <span>@Html.ValidationMessageFor(m => m.ProjName)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Location)</td>
+                    <td>
+                        <span>@Html.TextBoxFor(m => m.Location, new { @class = "form-control" })</span>
+                        @*<span>@Html.ValidationMessageFor(m => m.Location)</span>*@
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input id="btnAdd" class="btn btn-success" type="submit" value="Edit" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+}

@@ -1,0 +1,194 @@
+html,
+body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    background-color: #231f20;
+    color: #ffffff;
+    margin: 0em;
+    padding: 0em;
+    display: table-cell;
+    vertical-align: middle;
+
+    svg {
+        height: auto;
+        width: 1000px;
+        margin: 0 auto;
+
+        #grp-canon {
+            z-index: auto;
+
+            #canon {
+                animation-delay: 0s;
+                animation-name: FadeInCanon;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+                animation-timing-function: ease-in;
+            }
+
+            #canon-ring {
+                animation-delay: 0.5s;
+                animation-name: FadeInTurret;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+                animation-timing-function: ease-in;
+            }
+        }
+
+        #left-v {
+            z-index: auto;
+            animation-delay: 1.5s;
+            animation-name: FadeInLHead;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #right-v {
+            z-index: auto;
+            animation-delay: 1.5s;
+            animation-name: FadeInRHead;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #grp-left-nox {
+            z-index: auto;
+            animation-delay: 5s;
+            animation-name: FadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #grp-right-nox {
+            z-index: auto;
+            animation-delay: 5s;
+            animation-name: FadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #left-3 {
+            z-index: auto;
+            animation-delay: 2s;
+            animation-name: FadeInLHead;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #left-2 {
+            z-index: auto;
+            animation-delay: 3.5s;
+            animation-name: FadeIn;
+            animation-duration: 1.5s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #left-1 {
+            z-index: auto;
+            animation-delay: 5s;
+            animation-name: FadeIn;
+            animation-duration: 1.75s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #right-3 {
+            z-index: auto;
+            animation-delay: 2s;
+            animation-name: FadeInRHead;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #right-2 {
+            z-index: auto;
+            animation-delay: 3.5s;
+            animation-name: FadeIn;
+            animation-duration: 1.5s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+
+        #right-1 {
+            z-index: auto;
+            animation-delay: 5s;
+            animation-name: FadeIn;
+            animation-duration: 1.75s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+        }
+    }
+}
+
+/* #region animation */
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes FadeInCanon {
+    0% {
+        opacity: 0;
+        transform: translate(0, -3px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes FadeInTurret {
+    0% {
+        opacity: 0;
+        transform: translate(0, 3px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes FadeInLHead {
+    0% {
+        opacity: 0;
+        transform: translate(-5px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes FadeInRHead {
+    0% {
+        opacity: 0;
+        transform: translate(5px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+/* #endregion animation */

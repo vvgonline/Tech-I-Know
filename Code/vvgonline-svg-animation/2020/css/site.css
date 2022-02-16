@@ -1,0 +1,319 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  background-color: #231f20;
+  color: #ffffff;
+  margin: 0em;
+  padding: 0em;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+body svg {
+  height: auto;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+body svg #grp-canon {
+  z-index: auto;
+}
+
+body svg #grp-canon #canon {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-name: FadeInCanon;
+          animation-name: FadeInCanon;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #grp-canon #canon-ring {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-name: FadeInTurret;
+          animation-name: FadeInTurret;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #left-v {
+  z-index: auto;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-name: FadeInLHead;
+          animation-name: FadeInLHead;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #right-v {
+  z-index: auto;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-name: FadeInRHead;
+          animation-name: FadeInRHead;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #grp-left-nox {
+  z-index: auto;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #grp-right-nox {
+  z-index: auto;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #left-3 {
+  z-index: auto;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-name: FadeInLHead;
+          animation-name: FadeInLHead;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #left-2 {
+  z-index: auto;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #left-1 {
+  z-index: auto;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 1.75s;
+          animation-duration: 1.75s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #right-3 {
+  z-index: auto;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-name: FadeInRHead;
+          animation-name: FadeInRHead;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #right-2 {
+  z-index: auto;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+body svg #right-1 {
+  z-index: auto;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 1.75s;
+          animation-duration: 1.75s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+/* #region animation */
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes FadeInCanon {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, -3px);
+            transform: translate(0, -3px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes FadeInCanon {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, -3px);
+            transform: translate(0, -3px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes FadeInTurret {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 3px);
+            transform: translate(0, 3px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes FadeInTurret {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 3px);
+            transform: translate(0, 3px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes FadeInLHead {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-5px, 0);
+            transform: translate(-5px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes FadeInLHead {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-5px, 0);
+            transform: translate(-5px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes FadeInRHead {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(5px, 0);
+            transform: translate(5px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes FadeInRHead {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(5px, 0);
+            transform: translate(5px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+/* #endregion animation */
+/*# sourceMappingURL=site.css.map */

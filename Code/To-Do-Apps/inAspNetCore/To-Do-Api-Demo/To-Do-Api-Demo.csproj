@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <!-- <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel> -->
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>To_Do_Api_Demo</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- <PackageReference Include="Microsoft.AspNetCore.App" /> -->
+    <!-- <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" /> -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>

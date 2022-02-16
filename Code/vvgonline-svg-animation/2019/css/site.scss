@@ -1,0 +1,123 @@
+/*
+    Project: vvgonline-svg-animation
+    Author: Vaibhav Vijay Gupta <vvgonline.net@gmail.com>
+    Date created on: March 27, 2019
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+html {
+  margin: 0;
+  padding: 0;
+  body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Nunito", sans-serif;
+
+    header {
+      background-color: #3e2f3f;
+      h3 {
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+    }
+
+    #svg-icon {
+      width: 550px;
+      margin: 0 auto;
+
+      svg {
+        width: 550px;
+        height: 550px;
+        g#bg {
+          opacity: 1;
+        }
+        g#vvg {
+          path#lhead {
+            z-index: 15;
+            animation: FadeInLHead 0.5s 1s both ease-in;
+          }
+          path#rhead {
+            z-index: 15;
+            animation: FadeInRHead 0.5s 1s both ease-in;
+          }
+          g#rwing {
+            z-index: -10;
+            animation: FadeIn 2s 1.5s both ease-in;
+          }
+          g#lwing {
+            z-index: -10;
+            animation: FadeIn 2s 1.5s both ease-in;
+          }
+          g#g {
+            rect#canon {
+              z-index: 25;
+              animation-delay: 0s;
+              animation: FadeInCanon 1s ease-in both;
+            }
+            path#turret {
+              z-index: 20;
+              animation: FadeInTurret 0.5s 0.5s both ease-in;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* animation */
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeInCanon {
+  0% {
+    opacity: 0;
+    transform: translate(0, -3px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes FadeInTurret {
+  0% {
+    opacity: 0;
+    transform: translate(0, 3px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes FadeInLHead {
+  0% {
+    opacity: 0;
+    transform: translate(-5px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes FadeInRHead {
+  0% {
+    opacity: 0;
+    transform: translate(5px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
