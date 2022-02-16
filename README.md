@@ -20,7 +20,13 @@ In this repo I am going to make projects to demonstrate the technologies I know.
             <li>Windows-Terminal-Settings</li>
         </ul>
     <li>Design</li>
+        <ul>
+            <li>Color-Models</li>
+        </ul>
     <li>Market</li>
+        <ul>
+            <li>Direct-Marketing</li>
+        </ul>
 </ul>
 
 _NOTE_:
