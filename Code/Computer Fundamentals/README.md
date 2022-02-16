@@ -1,1 +1,1 @@
-## Tech-I-Know/Code/**COMPUTER FUNDAMENTALS**
+## Tech-I-Know/Code/**COMPUTER-FUNDAMENTALS**
