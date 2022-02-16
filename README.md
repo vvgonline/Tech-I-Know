@@ -2,26 +2,26 @@
 
 In this repo I am going to make projects to demonstrate the technologies I know.
 
-## List of Demos
+## Categories and Topics of Demos
 
 <ul>
-    <li>DotNet Demos
+    <li>Code</li>
         <ul>
-            <li>Asp-Mysql connection demo</li>
-            <li>Blazor app demo</li>
-            <li>Asp XML CRUD demo</li>
-            <li>YouTube API demo</li>
+            <li>Computer Fundamentals</li>
+            <li>DotNet Demos</li>
+            <li>Js Demos</li>
+            <li>PHP Demos</li>
+            <li>C++ Demos</li>
+            <li>frontEndSnippets</li>
+            <li>SOLID-Principles</li>
+            <li>Tech-boilerplates: A collection of starter-kit</li>
+            <li>To-Do Demo Apps</li>
+            <li>Vvgonline Icon SVG Animation</li>
+            <li>Windows-Terminal-Settings</li>
         </ul>
-    </li>
-    <li>Js Demos</li>
-    <li>PHP Demos</li>
-    <li>C++ Demos</li>
-    <li>Tech-boilerplates: A collection of starter-kit</li>
-    <li>To-Do Demo Apps
-        <ul>
-            <li>React.Js Demo</li>
-            <li>Asp.Net Core Web API using Swashbuckler Demo</li>
-        </ul>
-    </li>
-    <li>Vvgonline Icon SVG Animation</li>
+    <li>Design</li>
+    <li>Market</li>
 </ul>
+
+_NOTE_:
+Every demo directory has its own README file
