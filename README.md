@@ -29,5 +29,5 @@ In this repo I am going to make projects to demonstrate the technologies I know.
         </ul>
 </ul>
 
-_NOTE_:
+_NOTE_ :
 Every demo directory has its own README file
