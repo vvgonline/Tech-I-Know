@@ -13,6 +13,7 @@ In this repo I am going to make projects to demonstrate the technologies I know.
             <li>PHP Demos</li>
             <li>C++ Demos</li>
             <li>frontEndSnippets</li>
+            <li>SCRUM and Agile</li>
             <li>SOLID-Principles</li>
             <li>Tech-boilerplates: A collection of starter-kit</li>
             <li>To-Do Demo Apps</li>
@@ -22,11 +23,15 @@ In this repo I am going to make projects to demonstrate the technologies I know.
     <li>Design</li>
         <ul>
             <li>Color-Models</li>
+            <li>Design Thinking</li>
         </ul>
     <li>Market</li>
         <ul>
             <li>Direct-Marketing</li>
         </ul>
+    <li>
+        information technology management
+    </li>
 </ul>
 
 _NOTE_ :
