@@ -28,9 +28,9 @@ Some of the benefits of the subscription model for customers are:
 
 ### examples of  **b2b** subscription model
 
-    - TT platforms, such as Netflix, Amazon Prime, Hotstar, etc.
-    -  Food delivery platforms, such as Zomato, Swiggy, FreshMenu, etc.
-    -  Education and learning platforms, such as Byju's, Unacademy, Coursera, etc.
+    - OTT platforms, such as Netflix, Amazon Prime, Hotstar, etc.
+    - Food delivery platforms, such as Zomato, Swiggy, FreshMenu, etc.
+    - Education and learning platforms, such as Byju's, Unacademy, Coursera, etc.
     - Beauty and wellness platforms, such as Nykaa, Fab Bag, The Man Company, etc
 
 ## Customer Funnel
