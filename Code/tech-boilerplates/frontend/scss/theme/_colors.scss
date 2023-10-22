@@ -4,3 +4,117 @@
 * Main.scss & all other theme scss
 * files
 ----------------------------------*/
+/* ---------------------------------
+* list all colors here for themes
+* this file is imported in 
+* Main.scss & all other theme scss
+* files
+----------------------------------*/
+// bg grad colors
+$stop-color: rgba(77, 26, 25, 1);
+$start-color: rgba(36 ,25, 45, 1);
+// #4d1a19ff
+// #24192dff
+
+
+// bg colors
+$bg-1: rgba(0, 0, 0, 1);
+$bg-2: rgba(14, 44, 64, 1);
+
+// primary colors
+$prime-1: rgba(255, 55, 122, 1);
+$prime-2: rgba(55, 176, 255, 1);
+$prime-3: rgba(246, 228, 65, 1);
+$prime-4: rgba(97, 187, 148, 1);
+$prime-5: rgba(127, 127, 127, 1);
+
+// monochrome red-prime
+$red-1: rgba(255, 119, 164, 1);
+$red-2: rgba(255, 183, 207, 1);
+$red-3: rgba(255, 17, 97, 1);
+
+// monochrome blue-prime
+$blue-1: rgba(119, 201, 255, 1);
+$blue-2: rgba(183, 226, 255, 1);
+$blue-3: rgba(17, 161, 255, 1);
+
+// monochrome yellow-prime
+$yellow-1: rgba(246, 234, 127, 1);
+$yellow-2: rgba(246, 240, 188, 1);
+$yellow-3: rgba(246, 224, 78, 1);
+
+// monochrome green
+$green-1: rgba(144, 187, 168, 1);
+$green-2: rgba(22, 187, 116, 1);
+$green-3: rgba(69, 187, 136, 1);
+
+// https://usbrandcolors.com/tech/
+// facebook colors
+$facebook-1: rgb(59,89,152);
+$facebook-2: rgb(139,157,195);
+$facebook-3: rgb(223,227,238);
+$facebook-4: rgb(247,247,247);
+$facebook-5: rgb(255,255,255);
+$facebook-6: rgb(66,103,178);
+
+// twitter colors
+$twitter-1: rgb(29,161,242);
+$twitter-2: rgb(20,23,26);
+$twitter-3: rgb(101,119,134);
+$twitter-4: rgb(170,181,194);
+$twitter-5: rgb(225,232,237);
+$twitter-6: rgb(245,248,250);
+
+// youtube colors
+$youtube-1: rgb(255,0,0);
+$youtube-2: rgb(40,40,40);
+
+// Microsoft colors
+$microsoft-1: rgb(242,80,34);
+$microsoft-2: rgb(127,186,0);
+$microsoft-3: rgb(0,164,239);
+$microsoft-4: rgb(255,185,0);
+$microsoft-5: rgb(115,115,115);
+
+// google colors
+$google-1: rgb(66,133,244);
+$google-1: rgb(219,68,55);
+$google-1: rgb(244,180,0);
+$google-1: rgb(15,157,88);
+
+// github colors
+$github-1: rgb(24,22,22);
+$github-2: rgb(15,13,14);
+
+// twitch colors
+$twitch-1: rgb(130,50,180);
+
+// linkedin colors
+$linkedin-1: rgb(40,103,178);
+
+// instagram colors
+$insta-1: rgb(255, 48, 108);
+
+// reddit colors
+$reddit-1: rgb(255, 96 , 0);
+
+// colored div
+.prime-red {
+    color: $prime-1;
+}
+
+.prime-blue {
+    color: $prime-2;
+}
+
+.prime-yellow {
+    color: $prime-3;
+}
+
+.prime-green {
+    color: $prime-4;
+}
+
+.prime-gray {
+    color: $prime-5;
+}

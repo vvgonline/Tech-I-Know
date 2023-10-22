@@ -1,0 +1,33 @@
+/* #region animation */
+@keyframes translateUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, 10%);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes translateDownFadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, -10%);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* #endregion animation */
