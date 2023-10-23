@@ -3,7 +3,6 @@
     Digital Clock blazor component <br />
     @DateTime.Now.ToString("HH:mm:ss tt")
 </span>
-
 @code {
     //display digital clock START
     private System.Threading.Timer Timer;
@@ -14,7 +13,8 @@
         Timer = new System.Threading.Timer(_ =>
         {
             InvokeAsync(StateHasChanged);
-        }, null, 1000, 1000);   //counter every 1000ms/1s
+        }, null, 1000, 1000);
+        // counter every 1000ms/1s
     }
 
     void IDisposable.Dispose()
