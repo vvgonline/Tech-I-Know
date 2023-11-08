@@ -1,12 +1,28 @@
 ﻿@page
+
+@* @@page makes the file into an MVC action, which means that it handles requests directly, without going through a
+controller. @@page must be the first Razor directive on a page. @@page affects the behavior of other Razor constructs.
+Razor Pages file names have a .cshtml suffix. *@
+
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+<article class="text-center">
+    <h1 class="display-3">Welcome</h1>
     how to create this webapp: Run <code>dotnet new webapp</code> from the DOTNET CLI
-    <p>Learn about <a href="https://learn.microsoft.com/en-us/aspnet/core/razor-pages">building Web apps with ASP.NET
-            Core</a>.</p>
-</div>
+    <p>Learn about <a href="https://learn.microsoft.com/en-us/aspnet/core/razor-pages" target="_blank">building Web apps
+            with ASP.NET Core</a>.</p>
+    <article>
+        <h2>The time on the server is @DateTime.Now</h2>
+    </article>
+    <article>
+
+        <h3>Separate page model</h3>
+        <p>
+            @Model.Message
+        </p>
+
+    </article>
+</article>

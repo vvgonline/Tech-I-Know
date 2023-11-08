@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using webapp.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// Razor Pages is enabled
 builder.Services.AddRazorPages();
+
+builder.Services.AddDbContext<CustomerDbContext>(options =>
+    options.UseInMemoryDatabase("name"));
 
 var app = builder.Build();
 
@@ -19,7 +26,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-
+// Razor Pages is enabled
 app.MapRazorPages();
 
 app.Run();
