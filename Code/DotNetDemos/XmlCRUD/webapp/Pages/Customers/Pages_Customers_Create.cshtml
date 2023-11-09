@@ -1,21 +1,28 @@
 @page
-@model webapp.Pages.Customers.Pages_Customers_Create
+@model webapp.Pages.Customers.Pages_Customers_CreateModel
 @* Pages_Customers_Create is the name of page *@
 
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <p>Enter a customer name:</p>
 
-<form method="post">
+@* <form method="post">
     Name:
     <input type="text" data-value="true" asp-for="Customer!.Name"
         data-val-length="The field Name must be a string with a maximum length of 10." data-val-length-max="10"
         data-val-required="The Name field is required." id="Customer_Name" maxlength="10" name="Customer.Name"
         value="" />
     <input type="submit" />
-    @* <input name="__RequestVerificationToken" type="hidden"
-           value="<Antiforgery token here>" /> *@
+</form> *@
+@* <input name="__RequestVerificationToken" type="hidden"
+value="<Antiforgery token here>" /> *@
+
+<form method="post">
+    Name:
+    <input asp-for="Customer!.Name" />
+    <input type="submit" />
 </form>
+
 
 <script src="/lib/jquery/dist/jquery.js"></script>
 <script src="/lib/jquery-validation/dist/jquery.validate.js"></script>

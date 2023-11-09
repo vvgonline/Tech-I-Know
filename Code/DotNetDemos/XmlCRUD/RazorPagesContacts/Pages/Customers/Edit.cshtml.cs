@@ -1,16 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using webapp.Models;
+using RazorPagesContacts.Models;
 
-namespace webapp.Pages.Customers
+namespace RazorPagesContacts.Pages.Customers
 {
     #region snippet
-    public class Pages_Customers_EditModel : PageModel
+    public class EditModel : PageModel
     {
-        private readonly webapp.Data.CustomerDbContext _context;
+        private readonly RazorPagesContacts.Data.CustomerDbContext _context;
 
-        public Pages_Customers_EditModel(webapp.Data.CustomerDbContext context)
+        public EditModel(RazorPagesContacts.Data.CustomerDbContext context)
         {
             _context = context;
         }
@@ -64,7 +64,7 @@ namespace webapp.Pages.Customers
                 }
             }
 
-            return RedirectToPage("./Pages_Customers_Index");
+            return RedirectToPage("./Index");
         }
 
         private bool CustomerExists(int id)

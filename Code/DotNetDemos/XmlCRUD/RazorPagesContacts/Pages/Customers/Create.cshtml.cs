@@ -1,15 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using webapp.Models;
+using RazorPagesContacts.Models;
 
-namespace webapp.Pages.Customers
+namespace RazorPagesContacts.Pages.Customers
 {
-    //#region <snippet_PageModel>
-    public class Pages_Customers_CreateModel : PageModel
+    // <snippet_PageModel>
+    public class CreateModel : PageModel
     {
         private readonly Data.CustomerDbContext _context;
 
-        public Pages_Customers_CreateModel(Data.CustomerDbContext context)
+        public CreateModel(Data.CustomerDbContext context)
         {
             _context = context;
         }
@@ -23,7 +23,6 @@ namespace webapp.Pages.Customers
         [BindProperty]
         public Customer? Customer { get; set; }
 
-        // OnPostAsync: runs on POST requests (when a user posts the form) 👇
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -34,9 +33,9 @@ namespace webapp.Pages.Customers
             if (Customer != null) _context.Customer.Add(Customer);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Pages_Customers_Index");
+            return RedirectToPage("./Index");
         }
         // </snippet_OnPostAsync>
     }
-    //#endregion </snippet_PageModel>
+    // </snippet_PageModel>
 }

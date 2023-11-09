@@ -1,15 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using webapp.Models;
+using RazorPagesContacts.Models;
 
-namespace webapp.Pages.Customers
+namespace RazorPagesContacts.Pages.Customers
 {
     #region snippet
-    public class Pages_Customers_IndexModel : PageModel
+    public class IndexModel : PageModel
     {
         private readonly Data.CustomerDbContext _context;
-        public Pages_Customers_IndexModel(Data.CustomerDbContext context)
+        public IndexModel(Data.CustomerDbContext context)
         {
             _context = context;
         }
@@ -24,8 +24,7 @@ namespace webapp.Pages.Customers
         #region snippet2
         public async Task<IActionResult> OnPostDeleteAsync(int id)
         {
-             var contact = await _context.Customer.FindAsync(id);
-            //   var contact = await _context.Customer.Include(e=>e.Id).FirstAsync(e=>EF.Property<int>(e, e.Name) == id);
+            var contact = await _context.Customer.FindAsync(id);
 
             if (contact != null)
             {

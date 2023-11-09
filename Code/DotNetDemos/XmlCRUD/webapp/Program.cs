@@ -1,3 +1,5 @@
+// aspnetcore/razor-pages/index/6.0sample/RazorPagesContacts/Program.cs
+
 using Microsoft.EntityFrameworkCore;
 using webapp.Data;
 
