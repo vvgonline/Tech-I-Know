@@ -1,275 +1,146 @@
 body svg #identitySkills {
   z-index: auto;
 }
-
 body svg #identitySkills #logo #blueV {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-name: translateUpFadeIn;
-          animation-name: translateUpFadeIn;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-name: translateUpFadeIn;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
-
 body svg #identitySkills #logo #yellowV {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-  -webkit-animation-name: translateUpFadeIn;
-          animation-name: translateUpFadeIn;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 0.2s;
+  animation-name: translateUpFadeIn;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
-
 body svg #identitySkills #logo #barGroup {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-  -webkit-animation-name: translateDownFadeIn;
-          animation-name: translateDownFadeIn;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 0.4s;
+  animation-name: translateDownFadeIn;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
-
 body svg #identitySkills #fullName {
   z-index: 0;
 }
-
 body svg #identitySkills #fullName #Vaibhav {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-  -webkit-animation-name: FadeIn;
-          animation-name: FadeIn;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 0.6s;
+  animation-name: FadeIn;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
-
 body svg #identitySkills #fullName #Vijay {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-  -webkit-animation-name: FadeIn;
-          animation-name: FadeIn;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 0.8s;
+  animation-name: FadeIn;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
-
 body svg #identitySkills #fullName #Gupta {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-name: FadeIn;
-          animation-name: FadeIn;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 1s;
+  animation-name: FadeIn;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
-
 body svg #identitySkills #online {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-  -webkit-animation-name: translateUpFadeIn;
-          animation-name: translateUpFadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 1.2s;
+  animation-name: translateUpFadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
-
 body svg #identitySkills #design {
   z-index: auto;
 }
-
 body svg #identitySkills #design #designText {
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
-  -webkit-animation-name: FadeIn;
-          animation-name: FadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 1.6s;
+  animation-name: FadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
-
 body svg #identitySkills #design #designIcon {
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
-  -webkit-animation-name: translateDownFadeIn;
-          animation-name: translateDownFadeIn;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 1.6s;
+  animation-name: translateDownFadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
-
 body svg #identitySkills #code {
   z-index: auto;
 }
-
 body svg #identitySkills #code #codeText {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-name: FadeIn;
-          animation-name: FadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 2s;
+  animation-name: FadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
-
 body svg #identitySkills #code #codeIcon {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-name: translateDownFadeIn;
-          animation-name: translateDownFadeIn;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 2s;
+  animation-name: translateDownFadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
-
 body svg #identitySkills #market {
   z-index: auto;
 }
-
 body svg #identitySkills #market #marketText {
-  -webkit-animation-delay: 2.4s;
-          animation-delay: 2.4s;
-  -webkit-animation-name: FadeIn;
-          animation-name: FadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 2.4s;
+  animation-name: FadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
-
 body svg #identitySkills #market #marketIcon {
-  -webkit-animation-delay: 2.4s;
-          animation-delay: 2.4s;
-  -webkit-animation-name: translateDownFadeIn;
-          animation-name: translateDownFadeIn;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 2.4s;
+  animation-name: translateDownFadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
-
 body svg #identitySkills #training {
   z-index: auto;
 }
-
 body svg #identitySkills #training #trainingText {
-  -webkit-animation-delay: 2.8s;
-          animation-delay: 2.8s;
-  -webkit-animation-name: FadeIn;
-          animation-name: FadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 2.8s;
+  animation-name: FadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
-
 body svg #identitySkills #training #trainingIcon {
-  -webkit-animation-delay: 2.8s;
-          animation-delay: 2.8s;
-  -webkit-animation-name: translateDownFadeIn;
-          animation-name: translateDownFadeIn;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-delay: 2.8s;
+  animation-name: translateDownFadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
 }
 
 /* #region animation */
-@-webkit-keyframes translateUpFadeIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate(0, 10%);
-            transform: translate(0, 10%);
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes translateUpFadeIn {
   0% {
     opacity: 0;
-    -webkit-transform: translate(0, 10%);
-            transform: translate(0, 10%);
+    transform: translate(0, 10%);
   }
   100% {
     opacity: 1;
   }
 }
-
-@-webkit-keyframes translateDownFadeIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate(0, -10%);
-            transform: translate(0, -10%);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes translateDownFadeIn {
   0% {
     opacity: 0;
-    -webkit-transform: translate(0, -10%);
-            transform: translate(0, -10%);
+    transform: translate(0, -10%);
   }
   100% {
     opacity: 1;
   }
 }
-
-@-webkit-keyframes FadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes FadeIn {
   0% {
     opacity: 0;
@@ -278,6 +149,4 @@ body svg #identitySkills #training #trainingIcon {
     opacity: 1;
   }
 }
-
-/* #endregion animation */
-/*# sourceMappingURL=site.css.map */
+/* #endregion animation *//*# sourceMappingURL=site.css.map */
