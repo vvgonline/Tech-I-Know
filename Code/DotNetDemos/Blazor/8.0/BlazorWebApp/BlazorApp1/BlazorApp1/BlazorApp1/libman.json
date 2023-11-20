@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "FileSaver.js@2.0.5",
+      "destination": "wwwroot/Scripts/FileSaver.js/"
+    }
+  ]
+}
