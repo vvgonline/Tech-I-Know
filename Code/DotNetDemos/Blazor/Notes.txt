@@ -6,3 +6,6 @@ Reference GitHub Libraries:
 	5. https://www.roundthecode.com/dotnet/blazor [Simple blog]
 
 	TODO: add blazor webassembly app with web api for backend services and make this CSharp(C#) learning app
+
+
+VVG ONLINE is an authentic online representation of Vaibhav Vijay Gupta and his team of experts who share their knowledge or professional advice with businesses as Digital business consultants.

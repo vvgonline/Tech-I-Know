@@ -6,3 +6,4 @@ This project will show case Asp.Net or Asp.Net Core and XML CRUD. This process h
 
 - UsingAspNet (.Net Framework 4.5)\
 Note: Do not use Admin controller for now.
+- CoreWebApp (dotnet 8.0)

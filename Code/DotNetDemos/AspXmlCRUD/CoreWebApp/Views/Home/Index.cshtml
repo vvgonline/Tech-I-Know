@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@* @Model.ProjId
+@Model.ProjName *@
+
+   @foreach (var product in Model)
+            {
+@*     @product.ProjId
+    @product.ProjName *@
+    <table cellpadding="5" cellspacing"5" style="border:1px solid black; width:100%;background-color:White;">
+        <thead>
+            <tr>
+                <th style="background-color:black; color:white;">
+                    @product.ProjId
+             @*        @if (System.Web.Security.UrlAuthorizationModule.CheckUrlAccessForPrincipal("/admin", User, "GET"))
+                    { *@
+
+                    @Html.ActionLink("Edit", "Edit", new { id = product.ProjId }, new { style = "background-color:black; color:white !important;" })
+                    @* } *@
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td style="background-color:White;">
+                    @product.ProjName
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color:White;">
+                    @product.Location
+                </td>
+            </tr>
+        </tbody>
+    </table>
+}
+
+

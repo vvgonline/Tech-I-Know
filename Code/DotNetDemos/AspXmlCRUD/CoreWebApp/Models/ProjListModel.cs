@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace UsingAspNet.Models
+namespace CoreWebApp.Models
 {
-    public class ProjectModels
+    public class ProjListModel
     {
         ///<summary>
         /// Gets or sets Project unique number.
@@ -12,12 +12,12 @@ namespace UsingAspNet.Models
         /// Gets or sets Project Name.
         ///</summary>
         [Required]
-        public string ProjName { get; set; }
+        public required string ProjName { get; set; }
         ///<summary>
         /// Gets or sets Project location. It can be as simple as city/country name or can be full address
         ///</summary>
         [Required]
-        public string Location { get; set; }
+        public required string Location { get; set; }
         ///<summary>
         /// I have not used this
         ///</summary>

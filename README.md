@@ -25,9 +25,11 @@ In this repo I am going to make projects to demonstrate the technologies I know.
             <li>Color-Models</li>
             <li>Design Thinking</li>
         </ul>
+      <li>Information technology management</li>
     <li>Market</li>
         <ul>
             <li>Direct-Marketing</li>
+            <li>b2b subscription model</li>
         </ul>
     <li>
         information technology management
