@@ -87,7 +87,7 @@ namespace UsingAspNet.Controllers
         public ActionResult Edit(int id)
         {
             // object of model ProjectModels
-            ProjectModels pm = new ProjectModels();
+            //ProjectModels pm = new ProjectModels();
             XDocument xDocument = XDocument.Load(Server.MapPath(xmlDocLocation));
             var items = (from item in xDocument.Descendants("project")
                          where Convert.ToInt32(item.Element("Id").Value) == id

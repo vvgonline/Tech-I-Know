@@ -3,22 +3,22 @@
   <project>
     <Id>1</Id>
     <ProjectName>Oye24 V2</ProjectName>
-    <Location>Indore</Location>
+    <Location>Indore (INDIA)</Location>
   </project>
   <project>
     <Id>2</Id>
     <ProjectName>Mintto</ProjectName>
-    <Location>Indore</Location>
+    <Location>Indore (INDIA)</Location>
   </project>
   <project>
     <Id>3</Id>
     <ProjectName>LaCasa</ProjectName>
-    <Location>USA &amp; EU</Location>
+    <Location>INDIA, USA &amp; EU</Location>
   </project>
   <project>
     <Id>4</Id>
     <ProjectName>Scale Ban</ProjectName>
-    <Location>Indore</Location>
+    <Location>Indore (INDIA)</Location>
   </project>
   <project>
     <Id>5</Id>
@@ -28,11 +28,11 @@
   <project>
     <Id>6</Id>
     <ProjectName>Monster Buster Club</ProjectName>
-    <Location>France &amp; Made in India</Location>
+    <Location>France &amp; Made in INDIA (Mumbai)</Location>
   </project>
   <project>
     <Id>7</Id>
     <ProjectName>Servicewala4u</ProjectName>
-    <Location>Indore</Location>
+    <Location>Mumbai &amp; Indore (INDIA)</Location>
   </project>
 </Projects>

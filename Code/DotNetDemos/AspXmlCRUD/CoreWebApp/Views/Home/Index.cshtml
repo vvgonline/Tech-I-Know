@@ -1,47 +1,90 @@
-﻿
+﻿@using CoreWebApp.Models
+@model IEnumerable<ProjListModel>
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "VVG ONLINE //HOME XML CRUD DOTNET 8.0";
+    ViewBag.Title = "VVG ONLINE // HOME XML CRUD DOTNET 8.0";
+    //get total number of projects
+    int count = 0;
+    // ProjListModel project;
+    //if projects exsits else count will remain 0 and need to add projects first
+    if (Model != null)
+    {
+        foreach (ProjListModel Project in Model)
+        {
+            count++;
+        }
+    }
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<article class="text-center">
+    <h1 class="display-4">VVG ONLINE // HOME XML CRUD DOTNET 8.0</h1>
+    @* <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
+</article>
 
-@* @Model.ProjId
-@Model.ProjName *@
-
-   @foreach (var product in Model)
-            {
-@*     @product.ProjId
-    @product.ProjName *@
-    <table cellpadding="5" cellspacing"5" style="border:1px solid black; width:100%;background-color:White;">
+@if (count > 0)
+{
+    <table class="table table-responsive table-bordered table-striped">
+        <caption>Total Projects = @count</caption>
         <thead>
             <tr>
-                <th style="background-color:black; color:white;">
-                    @product.ProjId
-             @*        @if (System.Web.Security.UrlAuthorizationModule.CheckUrlAccessForPrincipal("/admin", User, "GET"))
-                    { *@
-
-                    @Html.ActionLink("Edit", "Edit", new { id = product.ProjId }, new { style = "background-color:black; color:white !important;" })
-                    @* } *@
+                <th>
+                    proj id
+                </th>
+                <th>
+                    proj name
+                </th>
+                <th>
+                    location
+                </th>
+                <th>
+                    edit
+                </th>
+                <th>
+                    delete
                 </th>
             </tr>
         </thead>
-
         <tbody>
-            <tr>
-                <td style="background-color:White;">
-                    @product.ProjName
-                </td>
-            </tr>
-            <tr>
-                <td style="background-color:White;">
-                    @product.Location
+        <tbody>
+            @foreach (var product in Model)
+            {
+
+                <tr>
+                    <td>
+                        @product.ProjId
+                    </td>
+                    <td>
+                        @product.ProjName
+                    </td>
+                    <td>
+                        @product.Location
+                    </td>
+                    <td>
+                            @Html.ActionLink("✏️", "Edit", new { id = @product.ProjId })
+                    </td>
+                    <td>
+                            @Html.ActionLink("❌", "Delete", new { id = @product.ProjId })
+                    </td>
+                </tr>
+            }
+            <tr class="">
+                <td colspan="5" class="text-center">
+                        @Html.ActionLink("Add NEW Project", "Create", "Home")
                 </td>
             </tr>
         </tbody>
     </table>
+}
+else
+{
+    <article>
+        <h2>
+            No projects for now. Add new projects first
+        </h2>
+        <p>
+            @Html.ActionLink("Add NEW Project", "Create", "Home")
+        </p>
+    </article>
 }
 
 

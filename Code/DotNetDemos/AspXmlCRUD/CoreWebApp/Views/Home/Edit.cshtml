@@ -1,0 +1,51 @@
+﻿@model CoreWebApp.Models.ProjListModel
+
+@{
+    ViewData["Title"] = "VVG ONLINE // EDIT" + @Model.ProjId;
+    ViewBag.Title = "VVG ONLINE // EDIT " + @Model.ProjId;
+}
+
+<article>
+    <h1>Edit</h1>
+
+    <h4>ProjListModel</h4>
+</article>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Update">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ProjId" class="control-label"></label>
+                <input asp-for="ProjId" class="form-control" />
+                <span asp-validation-for="ProjId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjName" class="control-label"></label>
+                <input asp-for="ProjName" class="form-control" />
+                <span asp-validation-for="ProjName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Location" class="control-label"></label>
+                <input asp-for="Location" class="form-control" />
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsEdit" /> @Html.DisplayNameFor(model => model.IsEdit)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
