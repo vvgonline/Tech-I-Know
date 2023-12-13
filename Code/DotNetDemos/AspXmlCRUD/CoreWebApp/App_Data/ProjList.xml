@@ -2,8 +2,8 @@
 <Projects>
   <project>
     <Id>1</Id>
-    <ProjectName>Monster Buster Club</ProjectName>
-    <Location>France &amp; Made in Crest Animation Studio, Mumbai, India</Location>
+    <ProjectName>Oye24 V2</ProjectName>
+    <Location>Indore (INDIA)</Location>
   </project>
   <project>
     <Id>2</Id>
@@ -12,13 +12,13 @@
   </project>
   <project>
     <Id>3</Id>
-    <ProjectName>LaCasa Home Decore</ProjectName>
-    <Location>USA &amp; EU; Made in Indore, India </Location>
+    <ProjectName>LaCasa</ProjectName>
+    <Location>INDIA, USA &amp; EU</Location>
   </project>
   <project>
     <Id>4</Id>
     <ProjectName>Scale Ban</ProjectName>
-    <Location>Indore</Location>
+    <Location>Indore (INDIA)</Location>
   </project>
   <project>
     <Id>5</Id>
@@ -28,11 +28,21 @@
   <project>
     <Id>6</Id>
     <ProjectName>Monster Buster Club</ProjectName>
-    <Location>France &amp; Made in Crest Animation Studio, Mumbai, India</Location>
+    <Location>France &amp; Made in INDIA (Mumbai)</Location>
   </project>
   <project>
     <Id>7</Id>
     <ProjectName>Servicewala4u</ProjectName>
-    <Location>Indore</Location>
+    <Location>Mumbai &amp; Indore (INDIA)</Location>
+  </project>
+  <project>
+    <Id>8</Id>
+    <ProjectName>Digital  Audio Workstation</ProjectName>
+    <Location>Korea</Location>
+  </project>
+  <project>
+    <Id>9</Id>
+    <ProjectName>ymn</ProjectName>
+    <Location>ploijnm</Location>
   </project>
 </Projects>

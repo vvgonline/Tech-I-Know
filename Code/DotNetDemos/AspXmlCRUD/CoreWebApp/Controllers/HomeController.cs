@@ -1,4 +1,5 @@
 ﻿using CoreWebApp.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
@@ -135,6 +136,46 @@ namespace CoreWebApp.Controllers
 
             return View(plm);
         }
+
+        // GET: Home/Create
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        // GET: Home/Delete/5
+        public ActionResult Delete(int? id)
+        {
+            try
+            {
+                // TODO: Add delete logic here
+                doc.Load(xmlDocLocation);
+                XmlNode RootNode = doc.SelectSingleNode("Projects");
+                XmlNodeList projects = RootNode.ChildNodes;
+
+                XmlNode node = projects[0];
+
+                foreach (XmlNode n in projects)
+                {
+                    //match the selected id and nodes inner text
+                    if (int.Parse(n["Id"].InnerText) == id)
+                    {
+                        node = n;
+                    }
+                }
+
+                //node.RemoveAll();   //removes nodes inside selected "project"
+                RootNode.RemoveChild(node); //removes selected "project" node
+
+                doc.Save(xmlDocLocation);
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
         #endregion
 
         #region GET-Post
@@ -174,6 +215,65 @@ namespace CoreWebApp.Controllers
             doc.Save(xmlDocLocation);
 
             return RedirectToAction("Index");
+        }
+
+        // POST: Home/Create
+        [HttpPost]
+        public ActionResult Create(ProjListModel project)
+        {
+            try
+            {
+                // insert logic here 👇
+                doc.Load(xmlDocLocation);
+                XmlNode node = doc.SelectSingleNode("Projects");
+                XmlNodeList nodeList = node.ChildNodes;
+
+                //get the last id
+                var x = doc.GetElementsByTagName("Id");
+                int Max = 0;
+                foreach (XmlElement item in x)
+                {
+                    int EId = Convert.ToInt32(item.InnerText.ToString());
+                    if (EId > Max)
+                    {
+                        Max = EId;
+                    }
+                }
+                Max += 1; //increment the last id by 1
+
+                //now to new node
+                XmlNode newNode = node.AppendChild(
+                        doc.CreateNode(type: XmlNodeType.Element, name: "project", namespaceURI: "")
+                    );
+                // TODO: Add last incremental Id logic
+                newNode.AppendChild(
+                        doc.CreateNode(XmlNodeType.Element, "Id", "")
+                    ).InnerText = Max.ToString();
+                // add project name
+                newNode.AppendChild(
+                        doc.CreateNode(XmlNodeType.Element, "ProjectName", "")
+                    ).InnerText = project.ProjName;
+                // add project location
+                newNode.AppendChild(
+                        doc.CreateNode(XmlNodeType.Element, "Location", "")
+                    ).InnerText = project.Location;
+
+                // now save the changes
+                doc.Save(xmlDocLocation);
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        // POST: Home/Delete/5
+        [HttpPost]
+        public ActionResult Delete(int id, IFormCollection collection)
+        {
+            return View();
         }
         #endregion
         #endregion
