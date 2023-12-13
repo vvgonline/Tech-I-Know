@@ -78,14 +78,12 @@ namespace CoreWebApp.Controllers
             //load xml file
             try
             {
-                doc.Load(xmlDocLocation);
+                doc.Load(xmlDocLocation.TrimEnd());
             }
             catch
             {
                 doc.LoadXml("<Projects></Projects>");
-                Console.WriteLine(doc);
             }
-            doc.Load(xmlDocLocation);
 
             // object of model ProjListModel
             List<ProjListModel> projList = [];
