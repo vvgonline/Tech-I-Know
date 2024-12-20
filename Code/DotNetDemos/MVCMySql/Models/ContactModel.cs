@@ -23,5 +23,5 @@ namespace MVCMySql.Models
         //MySql Database connection String
         public MySqlCon() : base(nameOrConnectionString: "LocalMySqlServer") { }
         public virtual DbSet<ContactModel> Contacts { get; set; }
-    }    
+    }
 }

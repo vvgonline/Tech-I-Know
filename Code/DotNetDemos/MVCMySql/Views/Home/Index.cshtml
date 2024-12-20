@@ -1,12 +1,11 @@
 ﻿@{
     ViewBag.Title = "Contact form Info";
 }
-@*@using MVCMySql.Models;
+@using MVCMySql.Models;
 @model IEnumerable<ContactModel>
     <table class="table-responsive table-striped">
         @foreach (var item in Model)
-        {
-        <tr>
+        {<tr>
             <td>
                 @Html.DisplayFor(modelitem => item.MsgId)
             </td>
@@ -25,30 +24,5 @@
             <td>
                 <a href="#">Delete</a>
             </td>
-        </tr>
-        }
-    </table>*@
-@using MVCMySql.Models
-@model IEnumerable<TagModel>
-    <table class="table-responsive table-striped">
-        @foreach (var item in Model)
-        {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelitem => item.TagId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelitem => item.TagName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelitem => item.TagFrequency)
-            </td>
-            <td>
-                <a href="#">Edit</a>
-            </td>
-            <td>
-                <a href="#">Delete</a>
-            </td>
-        </tr>
-        }
+        </tr>}
     </table>
