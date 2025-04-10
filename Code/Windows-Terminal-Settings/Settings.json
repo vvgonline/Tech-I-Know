@@ -50,12 +50,12 @@
         "defaults": {},
         "list": [
             {
-                "backgroundImage": "https://raw.githubusercontent.com/vvgonline/Tech-I-Know/master/Code/Windows-Terminal-Settings/windows-terminal-bg.png",
+                "backgroundImage": "https://raw.githubusercontent.com/vvgonline/Tech-I-Know/master/Code/Windows-Terminal-Settings/windows-terminal-bg-2025.png",
                 "backgroundImageOpacity": 0.05,
                 "backgroundImageStretchMode": "uniformToFill",
                 // "colorScheme": "Tinacious Design (Dark)",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "cursorColor": "#A13B63",
+                "cursorColor": "#ffdd33",
                 "cursorShape": "filledBox",
                 "font": {
                     "face": "Cascadia Code"
